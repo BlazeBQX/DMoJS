@@ -51,7 +51,7 @@ box-sizing: border-box;
         border-radius: 0px 0px 20px 20px;
         padding: 20px;
         text-align: top;
-        background: #fff;
+        background: #2a2222;
         position: absolute;
         align-items: baseline;
     }
@@ -85,7 +85,10 @@ box-sizing: border-box;
       * {
         box-sizing: border-box;
       }
-      
+      mark{
+        background-color: #592a2a;
+        color:white;
+      }
       /* Set a background color */
       body {
         background-color: #474e5d;
@@ -94,7 +97,7 @@ box-sizing: border-box;
       
       .timeline {
         position: relative;
-        max-width: 1200px;
+        max-width: 1500px;
         margin: 0 auto;
       }
       
@@ -149,7 +152,7 @@ box-sizing: border-box;
         right: 30px;
         border: medium solid rgb(0, 0, 0);
         border-width: 10px 0 10px 10px;
-        border-color: transparent transparent transparent gray;
+        border-color: transparent transparent transparent rgb(169, 107, 107);
       }
       
       .right::before {
@@ -162,7 +165,7 @@ box-sizing: border-box;
         left: 30px;
         border: medium solid rgb(0, 0, 0);
         border-width: 10px 10px 10px 0;
-        border-color: transparent gray transparent transparent;
+        border-color: transparent rgb(169, 107, 107) transparent transparent;
       }
       
       .right::after {
@@ -171,9 +174,21 @@ box-sizing: border-box;
       
       .content {
         padding: 20px 30px;
-        background-color: gray;
+        background-color: rgb(169, 107, 107);
         position: relative;
         border-radius: 6px;
+        text-align: left;
+        
+      }
+      .content p{
+        color:#fff;
+      }
+      .content h2{
+        color:#fff;
+      }
+      .medImg{
+        height:150px;
+        width:100px;
       }
       
       @media screen and (max-width: 600px) {
