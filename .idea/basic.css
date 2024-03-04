@@ -86,8 +86,8 @@ box-sizing: border-box;
         box-sizing: border-box;
       }
       mark{
-        background-color: #592a2a;
-        color:white;
+        background-color: rgb(169, 107, 107);
+        color:purple;
       }
       /* Set a background color */
       body {
