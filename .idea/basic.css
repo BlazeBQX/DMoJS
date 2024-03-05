@@ -11,6 +11,8 @@ box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
     }
+
+    
     
     .mid{
         width: 100%;
@@ -55,6 +57,9 @@ box-sizing: border-box;
         position: absolute;
         align-items: baseline;
     }
+
+    
+
     ul {
         list-style-type: none;
         margin: 0px;
@@ -88,6 +93,7 @@ box-sizing: border-box;
       mark{
         background-color: rgb(169, 107, 107);
         color:purple;
+        font-style: italic;
         
       }
       /* Set a background color */
