@@ -14,7 +14,7 @@ box-sizing: border-box;
     
     .mid{
         width: 100%;
-        height: 200vh;
+        height: 1050vh;
         background: linear-gradient(#ae6f6f,#713c3c);
         display: flex;
         align-items:  top;
@@ -88,6 +88,7 @@ box-sizing: border-box;
       mark{
         background-color: rgb(169, 107, 107);
         color:purple;
+        
       }
       /* Set a background color */
       body {
