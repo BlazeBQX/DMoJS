@@ -12,7 +12,7 @@ box-sizing: border-box;
     box-sizing: border-box;
     }
 
-    
+   
     
     .mid{
         width: 100%;
@@ -66,6 +66,7 @@ box-sizing: border-box;
         padding: 0px;
         overflow: hidden;
         background-color: #333;
+        color:#fff;
       }
       
       
@@ -96,11 +97,10 @@ box-sizing: border-box;
         font-style: italic;
         
       }
-      mark2{
+      .mark2{
         background-color: rgb(169, 107, 107);
         color:purple;
       }
-      /* Set a background color */
       body {
         background-color: #474e5d;
         font-family: Helvetica, sans-serif;
@@ -131,6 +131,7 @@ box-sizing: border-box;
 
       }
       
+      
       .container::after {
         content: '';
         position: absolute;
@@ -147,12 +148,43 @@ box-sizing: border-box;
       
       .left {
         left: 0;
+
       }
       
       .right {
         left: 50%;
       }
-      
+      .imageContainerR{
+        position: absolute;
+        display:inline-block;
+        padding: 10px 50px;
+        content:none;
+        left: 50%;
+        z-index: 998;
+      }
+      .imageContainerL{
+        position: absolute;
+        display:inline-block;
+        padding: 10px 50px;
+        content:none;
+        left: 25%;
+        z-index: 998;
+      }
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 999;
+      }
+      .imageContainerL:hover .dropdown-content {
+        display: block;
+    }
+    .imageContainerR:hover .dropdown-content {
+        display: block;
+    }
+
       .left::before {
         content: " ";
         height: 0;
@@ -187,7 +219,7 @@ box-sizing: border-box;
         padding: 20px 30px;
         background-color: rgb(169, 107, 107);
         position: relative;
-        border-radius: 6px;
+        border-radius: 6px; 
         text-align: left;
         
       }
@@ -196,6 +228,9 @@ box-sizing: border-box;
       }
       .content h2{
         color:#fff;
+      }
+      .content img{
+        position:flex;
       }
       .medImg{
         height:150px;
