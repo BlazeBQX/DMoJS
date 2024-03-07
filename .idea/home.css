@@ -1,5 +1,5 @@
 *{
-  .title{
+  .titlecard{
     position:absolute;
     top: 20%;
     width: 100%;
@@ -9,7 +9,7 @@
     z-index: 999;
   }
 
-  .title h1{
+  .titlecard h1{
     color: blueviolet;
     font-size: 80px;
     font-family: 'Poppins';
