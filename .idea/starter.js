@@ -5,18 +5,33 @@ function toggleMenu(x) {
   }
 
   
-function contentDrop(){
+function contentDrop(n){
   
-   
-    let main = document.getElementsByClassName("content");
-    let arrow = document.getElementsByClassName("arrow")
-    arrow[0].style.display="none";
-    let image = document.getElementById("image");
-    image.style.width="325px";
-    image.style.height="400px";
-    setTimeout(1000);
+    
+    let arrow = document.getElementsByClassName("arrow");
+    let imageContainer = document.getElementsByClassName("imageContainerL");
     let expanded = document.getElementsByClassName("expanded-content");
-    expanded[0].style.display="block";
+
+
+    arrow[n].style.display="none";
+
+    let image = document.getElementById("image"+n);
+    if(n%2==0){
+        image.style.width="300px";
+        image.style.height="400px";
+    }
+    else{
+        var i = Math.floor(n/2);
+        imageContainer[i].style.left="25%";
+        image.style.width="300px";
+        image.style.height="400px";
+
+        
+    }
+    setTimeout(1000);
+    expanded[n].style.display="block";
+    expanded[n].style.visibility="visible";
+
 
         
       

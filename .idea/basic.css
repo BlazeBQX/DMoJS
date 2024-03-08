@@ -4,7 +4,9 @@ padding: 0;
 font-family: 'Poppins', sans-serif;
 box-sizing: border-box;
 }
-
+.h4{
+    width:400px;
+}
 *{
     margin: 0;
     padding: 0;
@@ -15,15 +17,16 @@ box-sizing: border-box;
         display:block;} 
    
     .expanded-content{
-        display:none;
+        display: none;
+        visibility:hidden;
         position: relative;
 
-        min-width: 160px;
         /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
         z-index: 997;
     }
     .arrowContainer{
         display: flex;
+        position: relative;
     align-items: center;
     justify-content: center;
     background-color: rgb(224, 224, 224, .4);
@@ -52,8 +55,9 @@ box-sizing: border-box;
    
     .mid{
         width: 100%;
-        height: 1050vh;
         display: flex;
+        overflow: hidden;
+        height:1050vh;
         align-items:  top;
         position: relative;
         z-index: 200;
@@ -179,21 +183,22 @@ box-sizing: border-box;
         display:inline-block;
         padding: 10px 50px;
         left: 50%;
-        z-index: 998;
+        z-index: 997;
+        overflow: hidden;
       }
       .imageContainerL{
         position: absolute;
         display:inline-block;
         padding: 10px 50px;
         content:none;
-        left: 25%;
-        z-index: 998;
+        left: 33%;
+        overflow: hidden;
+        z-index: 997;
       }
       .dropdown-content {
         display: none;
         position: absolute;
         background-color: #f1f1f1;
-        min-width: 160px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 999;
       }
@@ -235,6 +240,7 @@ box-sizing: border-box;
       .content {
         padding: 20px 30px;
         position: relative;
+        left:auto;
         border-radius: 6px; 
         text-align: left;
         color:#fff;
@@ -261,7 +267,6 @@ box-sizing: border-box;
       
         .container {
           width: 100%;
-        
           padding-left: 70px;
           padding-right: 25px;
         }
