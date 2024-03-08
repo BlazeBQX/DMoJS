@@ -26,7 +26,7 @@ box-sizing: border-box;
         display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(169, 107, 107);
+    background-color: rgb(224, 224, 224, .4);
     z-index: 990;
     }
 
@@ -53,7 +53,6 @@ box-sizing: border-box;
     .mid{
         width: 100%;
         height: 1050vh;
-        background: linear-gradient(rgb(169, 107, 107),#713c3c);
         display: flex;
         align-items:  top;
         position: relative;
@@ -109,45 +108,18 @@ box-sizing: border-box;
         to {opacity: 1}
       }
 
-    ul {
-        list-style-type: none;
-        margin: 0px;
-        padding: 0px;
-        overflow: hidden;
-        background-color: #333;
-        color:#fff;
-      }
-      
-      
-
-      li {
-        float: left;
-      }
-      
-      li a {
-        display: block;
-        color: white;
-        height:40px;
-        text-align: bottom;
-        padding: 10px 30px;
-        text-decoration: none;
-      }
-      
-      li a:hover {
-        background-color: #111;
-      }
     
       * {
         box-sizing: border-box;
       }
       mark{
-        background-color: rgb(169, 107, 107);
+        background-color: rgb(224, 224, 224, .4);
         color:purple;
         font-style: italic;
         
       }
       .mark2{
-        background-color: rgb(169, 107, 107);
+        background-color: rgb(224, 224, 224, .4);
         color:purple;
       }
       body {
@@ -188,7 +160,6 @@ box-sizing: border-box;
         height: 25px;
         right: -17px;
         background-color: white;
-        border: 4px solid #FF9F55;
         
         top: 15px;
         border-radius: 50%;
@@ -243,7 +214,6 @@ box-sizing: border-box;
         right: 30px;
         border: medium solid rgb(0, 0, 0);
         border-width: 10px 0 10px 10px;
-        border-color: transparent transparent transparent rgb(169, 107, 107);
       }
       
       .right::before {
@@ -256,7 +226,6 @@ box-sizing: border-box;
         left: 30px;
         border: medium solid rgb(0, 0, 0);
         border-width: 10px 10px 10px 0;
-        border-color: transparent rgb(169, 107, 107) transparent transparent;
       }
       
       .right::after {
@@ -265,7 +234,6 @@ box-sizing: border-box;
       
       .content {
         padding: 20px 30px;
-        background-color: rgb(169, 107, 107);
         position: relative;
         border-radius: 6px; 
         text-align: left;
@@ -313,4 +281,80 @@ box-sizing: border-box;
           left: 0%;
         }
       }
-      
+    
+      /* NEW CONTENT BELOW*/
+
+  .header{
+    overflow:auto;
+    width:auto;
+    height: auto;
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 12px;
+    padding-top: 10px;
+    padding-left: 12px;
+}
+
+.logo{
+  float:right;
+  margin: 10px;
+  padding: 10px;
+}
+
+.logo:hover{
+cursor:pointer;
+}
+
+.bar1, .bar2, .bar3 {
+
+    width: 35px;
+    height: 5px;
+    background-color:white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Rotates first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fades out middle bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotates last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+.menu-dropdown{
+  display:none;
+}
+
+ul{
+  list-style-type:none;
+  margin: 0px;
+  padding-top: 10px;
+}
+
+li a{
+color:white;
+opacity: 50%;
+display: block;
+height:40px;
+text-align: bottom;
+text-decoration: none;
+
+}
+
+li a:hover {
+opacity: 100%;
+transition: opacity 0.4s;
+}

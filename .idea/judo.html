@@ -6,25 +6,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href = "basic.css">
     <title>Homepage</title>
+
+    <style>
+      .header{
+        background-color:#1E2451;
+      }
+      .content {
+        background-color: #6f7cbe;
+      }
+      .mid{
+        background: linear-gradient(#1E2451, #B4BFF9);
+      }
+      .left::before{
+        border-color: transparent transparent transparent #6f7cbe;
+      }
+      .right::before{
+        border-color: transparent #6f7cbe transparent transparent;
+      }
+      .container::after{
+        border: 4px solid #1E2451;
+      }
+      .timeline::after{
+        background-color: #1E2451;
+      }
+      .textCard{
+        background: #DBE0FB;
+      }
+    </style>
+
 </head>
 <body>
     <script src = "starter.js"></script>
-    <ul>
-        <li><a href="http://127.0.0.1:5500/.idea/starter.html">Sumo</a></li>
-        <li><a href="http://127.0.0.1:5500/.idea/judo.html">Judo</a></li>
-        <li><a href="http://127.0.0.1:5500/.idea/kendo.html">Kendo</a></li>
-        <li><a href="http://127.0.0.1:5500/.idea/yakyu.html">Yakyū</a></li>
-        <li><a href="http://127.0.0.1:5500/.idea/starter.html">Sports Day</a></li>
-        <li><a href="http://127.0.0.1:5500/.idea/starter.html">International Sports</a></li>
 
-        <class li style="float:right"><a href="http://127.0.0.1:5500/DMoJS/.idea/homepage.html">
-            <img src = "assets/images/dmojslogo.jpg"
-             width="30" 
-              height="30">
-            </a>
-            
-        </a></li>
-      </ul>  
+    
+<!-- header code begins here-->
+<div class="header">
+  <div class="menu-icon"  onclick="toggleMenu(this)" style="float:left;">
+     <div class="bar1"></div>
+     <div class="bar2"></div>
+     <div class="bar3"></div>
+
+         <div id="myDropdown" class="menu-dropdown">
+          <ul>
+            <li><a href="http://127.0.0.1:5500/.idea/starter.html">Sumo</a></li>
+            <li><a href="http://127.0.0.1:5500/.idea/judo.html">Judo</a></li>
+            <li><a href="http://127.0.0.1:5500/.idea/kendo.html">Kendo</a></li>
+            <li><a href="http://127.0.0.1:5500/.idea/yakyu.html">Yakyū</a></li>
+            <li><a href="http://127.0.0.1:5500/.idea/starter.html">Sports Day</a></li>
+            <li><a href="http://127.0.0.1:5500/.idea/starter.html">International Sports</a></li>
+         </ul></div>
+     </div>
+     <div class="logo">
+      <a href="http://127.0.0.1:5500/DMoJS/.idea/homepage.html"> 
+        <img src = "assets/images/dmojslogo.jpg"
+          width="40" 
+          height="40">
+     </div></a>
+</div>
+<!-- header code ends here-->
+
+
     <div class = "mid">
     
         <div class = "textCard">
