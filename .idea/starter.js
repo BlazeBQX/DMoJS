@@ -36,3 +36,34 @@ function contentDrop(n){
         
       
 }
+
+function contentDropWHL(n,w,h,l){
+  
+    
+    let arrow = document.getElementsByClassName("arrow");
+    let imageContainer = document.getElementsByClassName("imageContainerL");
+    let expanded = document.getElementsByClassName("expanded-content");
+
+
+    arrow[n].style.display="none";
+
+    let image = document.getElementById("image"+n);
+    if(n%2==0){
+        image.style.width=""+w+"px";
+        image.style.height=""+h+"px";
+    }
+    else{
+        var i = Math.floor(n/2);
+        imageContainer[i].style.left=""+l+"%";
+        image.style.width=""+w+"px";
+        image.style.height=""+h+"px";
+
+    }
+    setTimeout(1000);
+    expanded[n].style.display="block";
+    expanded[n].style.visibility="visible";
+
+
+        
+      
+}
