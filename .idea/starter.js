@@ -44,7 +44,6 @@ function contentDropWHL(n,w,h,l){
     let imageContainer = document.getElementsByClassName("imageContainerL");
     let expanded = document.getElementsByClassName("expanded-content");
 
-
     arrow[n].style.display="none";
 
     let image = document.getElementById("image"+n);
@@ -66,4 +65,15 @@ function contentDropWHL(n,w,h,l){
 
         
       
+}
+function stuntHeight()
+{
+    let tl = document.getElementsByClassName("mid");
+    let x = 0;
+    let containers = document.getElementsByClassName("container");
+    for(let i = 0;i<containers.length;i++)
+    {
+        x+= containers[i].getAttribute("height")+30;
+    }
+    tl[0].style.height=""+i+"px";
 }

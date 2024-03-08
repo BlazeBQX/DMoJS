@@ -13,6 +13,7 @@ box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
     }
+   
     .show {
         display:block;} 
    
@@ -57,7 +58,7 @@ box-sizing: border-box;
         width: 100%;
         display: flex;
         overflow: hidden;
-        height:1050vh;
+        /*height:1050vh;*/
         align-items:  top;
         position: relative;
         z-index: 200;
@@ -133,6 +134,8 @@ box-sizing: border-box;
       
       .timeline {
         position: relative;
+        height:fit-content;
+        padding-bottom: 200px;
         max-width: 1500px;
         margin: 0 auto;
       }
@@ -146,6 +149,14 @@ box-sizing: border-box;
         bottom: 5%;
         left: 50%;
         margin-left: -3px;
+      }
+      .arrow-down {
+        width: 0; 
+        height: 0; 
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        bottom:4%;
+        border-top: 20px solid #f00;
       }
       
       .container {
