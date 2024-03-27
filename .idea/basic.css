@@ -374,3 +374,7 @@ li a:hover {
 opacity: 100%;
 transition: opacity 0.4s;
 }
+
+selection:hover{
+  filter: brightness(50%)  
+}
