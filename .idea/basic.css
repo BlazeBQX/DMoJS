@@ -128,7 +128,7 @@ box-sizing: border-box;
         color:purple;
       }
       body {
-        background-color: #474e5d;
+        background-color: linear-gradient(#432E57,#432E57);
         font-family: Helvetica, sans-serif;
       }
       

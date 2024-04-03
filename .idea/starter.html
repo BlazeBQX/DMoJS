@@ -18,7 +18,7 @@
       }
 
       .mid{
-        background: linear-gradient(#432E57, #A182BE);
+        background: linear-gradient(#432E57, #a182be);
       }
 
       .left::before{
@@ -45,6 +45,22 @@
       }
       .arrowContainer{
         background-color:#6F5B84;
+      }
+
+/* audio player code below*/
+
+      .audio-player{
+        position:fixed;
+        align-content:center;
+        bottom:0;
+        left:0;
+        right:0;
+        z-index:998;
+      }
+
+      ::-webkit-media-controls-enclosure {
+        border-radius: 5px;
+        background-color: #ceb5e6;
       }
 
     </style>
@@ -78,7 +94,6 @@
      </div></a>
 </div>
 <!-- header code ends here-->
-
 
 
     <div class = "mid" style = "height:fit-content;">
@@ -314,7 +329,15 @@
     
         
     </div>
-    
+
+    <!-- audio player code below -->
+        <div class="audio-player" ALIGN="center">
+      <audio controls>
+        <source src="assets\images/bell.wav" type="audio/wav">
+      </audio>
+    </div>
+
+
     <!--muller html for uploading images-->
     <!--form method="POST" action="/upload" enctype="multipart/form-data">
         <input type = "file" name = "image">
