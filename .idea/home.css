@@ -115,11 +115,15 @@
         to {opacity: 1}
       }
 
+      body{
+        background-color:black;
+      }
+
 
     /* HEADER CODE BELOW*/
     .header{
       overflow:auto;
-      background-color: #AC5C1F;
+      background:black;
       width:auto;
       height: auto;
     }
@@ -132,6 +136,7 @@
       padding-top: 10px;
       padding-left: 12px;
   }
+
   
   .logo{
     float:right;
@@ -170,14 +175,12 @@
   }
   .menu-dropdown{
     display:none;
-
   }
 
   ul{
     list-style-type:none;
     margin: 0px;
     padding-top: 10px;
-
   }
 
 li a{
@@ -193,4 +196,85 @@ li a{
 li a:hover {
   opacity: 100%;
   transition: opacity 0.4s;
+  }
+
+  /* header content ends hee*/
+
+
+  body{
+    background-color: linear-gradient(white,black,black,white);
+  }
+
+  .text-header{
+    text-align: center;
+  }
+
+  .text-header h1{
+    color:white;
+    font-family: 'Poppins';
+    text-decoration:underline;
+    padding-top: 20px;
+    font-size:40px;
+    padding-bottom:20px;
+  }
+
+  .mid{
+    background-color:#841a3c;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 15px;
+    padding-bottom: 40px;
+    align-self: center;
+  }
+
+  .row {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+  
+  .column {
+    z-index:997;
+    flex: 33.33%;
+    padding-top: 15px;
+    padding-bottom:15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align:center;
+    position:relative;
+  }
+
+  .end{
+    background: #33101C;
+  }
+
+  .end p{
+    margin-bottom: 5px;
+    padding: 5px;
+    color:white;
+  }
+
+  .end p:hover{
+    cursor:pointer;
+    color:#D33562;
+    text-decoration: underline;
+    opacity:60%;
+  }
+
+  .column .image-overlay p{
+    font-size:40px;
+    opacity:0%;
+    color: white;
+    position:absolute;
+    justify-content:space-evenly;
+    align-items:center;
+    width:100%;
+    text-align:center;
+    top:180px;
+  }
+
+  .column:hover .image-overlay p{
+    opacity:100%;
+    transition: opacity 0.3s ease-in-out; 
+    background:rgba(211,53,98,0.83);
   }
