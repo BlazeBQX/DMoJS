@@ -23,18 +23,39 @@
       .right::before{
         border-color: transparent #6f7cbe transparent transparent;
       }
-      .container::after{
-        border: 4px solid #1E2451;
-      }
-      .timeline::after{
-        background-color: #1E2451;
-      }
       .textCard{
         background: #DBE0FB;
       }
       .arrowContainer{
         background-color:#6f7cbe;
       }
+      header::before{
+        border-bottom: .2em solid #DBE0FB;
+
+      }
+      h1{
+        color: #B4BFF9;
+      }
+      .tree li a{	color: #6f7cbe;
+}
+.tree li a+ul li::after, 
+.tree li a+ul li::before, 
+.tree li a+ul::before, 
+.tree li a+ul ul::before{
+	border-color:  #6f7cbe;
+}
+.tree li:last-child::before{
+  border-color:  #6f7cbe;
+
+}
+
+
+      /*.tree li a:hover+ul li::after, 
+.tree li a:hover+ul li::before, 
+.tree li a:hover+ul::before, 
+.tree li a:hover+ul ul::before{
+	border-color:  #1E2451;
+}*/
     </style>
 
 </head>
@@ -68,16 +89,68 @@
 </div>
 <!-- header code ends here-->
 
+<div class = "mid" style = "height:fit-content;">
+  
+  <div class = "textCard" style = "height: 1500px;top:0%">
+    <header>
+      <h1>JUDO/<ruby>柔道<rt>じゅうどう</rt></ruby></h1>
+    </header> 
+  </div>
+  
 
+<div class="tree" style = "position:relative;top:300px;height:fit-content;padding-bottom: 600px;z-index: 9999;">
+	<ul>
+		<li>
+			<a href="#">Kano Jigorō</a>
+			<ul>
+					
+				<li>
+					<a href="#">Tomita Tsunejirō</a>
+        </li>
+            <li>
+              
+            <a href="#">Child</a>
+          <ul>
+          </li>
+						<li><a href="#">Grand Child</a>
+            </li>
+						<li>
+							<a href="#">Grand Child</a>
+							<ul>
+								<li>
+									<a href="#">Great Grand Child</a>
+								</li>
+								<li>
+									<a href="#">Great Grand Child</a>
+								</li>
+								<li>
+									<a href="#">Great Grand Child</a>
+								</li>
+							</ul>
+						</li>
+						<li><a href="#">Grand Child</a></li>
+            
+					</ul>
+          <li>
+            <a href="#">Child</a>
+          </li>
+				</li>
+			</ul>
+</div>
+</div>
+
+
+<!--Previous code-->  
+<!--
 <div class = "mid" style = "height:fit-content;">
     
         <div class = "textCard">
-            <h1></h1>
-        </div>
+            <h1>Judo</h1>
+      </div>
+        
 
         <div class="timeline">
 
-          
     <div class="imageContainerR">
       <img id = "image0" src="assets/images/judo1.jpg" ALIGN = "right" style= "width:150px;height:200px"/>
       <div class = "dropdown-content">
@@ -317,6 +390,7 @@
         <input type = "file" name = "image">
         <input type = "Submit">
     <form-->
+    
 
 </body>
 </html>

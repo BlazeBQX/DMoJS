@@ -58,6 +58,7 @@ box-sizing: border-box;
         width: 100%;
         display: flex;
         overflow: hidden;
+        padding-bottom: 30px;
         /*height:1050vh;*/
         align-items:  top;
         position: relative;
@@ -86,16 +87,107 @@ box-sizing: border-box;
         z-index: 999;
         margin-bottom: 10px;
     }*/
+    @import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+
+:root {
+	/* Base font size */
+	font-size: 10px;
+
+	/* Heading height variable*/
+	--heading-height: 30em;
+}
+
+body {
+	font-family: "Roboto", Arial, sans-serif;
+	min-height: 100vh;
+	background-color: #101010;
+}
+
+header {
+	position: absolute;
+	width: 97%;
+	height: var(--heading-height);
+}
+
+/* Create angled background with 'before' pseudo-element */
+header::before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 2px;
+	bottom: 6em;
+	width: 100%;
+	height: calc(var(--heading-height) + 10em);
+	z-index: -1;
+	transform: skewY(-3.5deg);
+	background: 
+  linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+       url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Judo_1.JPG/2560px-Judo_1.JPG')no-repeat 0px -250px,
+     linear-gradient(#4e4376, #2b5876);;
+	background-size: cover;
+	border-bottom: .2em solid #fff;
+}
+
+
+.text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+
+  backface-visibility: hidden;
+  margin-bottom: 30px;
+}
+
+.heading-primary-main {
+  display: block;
+  font-size: 26px;
+  font-weight: 400;
+  letter-spacing: 5px;
+}
+h1 {
+	font-size: calc(2.8em + 2.6vw);
+	font-weight: 700;
+  z-index: 99999;
+	letter-spacing: .01em;
+	padding: 10rem 0 0 4.5rem;
+	text-shadow: .022em .022em .022em #111;
+}
+
+main {
+	padding: calc(var(--heading-height) + 1.5vw) 4em 0;
+  z-index: 3;
+
+}
+
+p {
+	font-size: calc(2em + .25vw);
+	font-weight: 400;
+	line-height: 2;
+	margin-bottom: 1.5em;
+	color: #fcfcfc;
+}
+
     .textCard{
         width:97%;
         height:99%;
         bottom: 1%;
         border-radius: 0px 0px 20px 20px;
         padding: 20px;
-        text-align: top;
+        z-index: 1;
+        overflow: hidden;
+        text-align: top center;
         background: #2a2222;
         position: absolute;
-        align-items: baseline;
+    }
+    .textCard h1{
+      position: relative top;
+      left:50%;
     }
 
     .fade {
@@ -117,6 +209,7 @@ box-sizing: border-box;
       * {
         box-sizing: border-box;
       }
+
       mark{
         background-color: rgb(224, 224, 224, .4);
         color:purple;
@@ -131,6 +224,96 @@ box-sizing: border-box;
         background-color: linear-gradient(#432E57,#432E57);
         font-family: Helvetica, sans-serif;
       }
+      x* {margin: 0; padding: 0;}
+
+.tree ul {
+	padding-top: 40px; position: relative;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+
+.tree li {
+	float: left; text-align: center;
+	list-style-type: none;
+	position: relative;
+	padding: 20px 0px 0 0px;
+	
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+
+/*use ::before and ::after to draw the connectors*/
+
+.tree li::before, .tree li::after{
+	content: '';
+	position: absolute; top: 0; right: 50%;
+	border-top: 4px solid ;
+	width: 50%; height: 40px;
+}
+.tree li::after{
+	right: auto; left: 50%;
+	border-left: 4px solid ;
+}
+
+/*remove left-right connectors from elements without 
+any siblings*/
+.tree li:only-child::after, .tree li:only-child::before {
+	display: none;
+}
+
+/*Remove space from the top of single children*/
+.tree li:only-child{ padding-bottom: 0px;}
+
+/*Remove left connector from first child and 
+right connector from last child*/
+.tree li:first-child::before, .tree li:last-child::after{
+	border: 0px none;
+}
+/*vertical connector to the last nodes*/
+.tree li:last-child::before{
+	border-right: 4px solid ;
+	border-radius: 0 5px 0 0;
+	-webkit-border-radius: 0 5px 0 0;
+	-moz-border-radius: 0 5px 0 0;
+}
+.tree li:first-child::after{
+	border-radius: 4px 0 0 0;
+	-webkit-border-radius: 5px 0 0 0;
+	-moz-border-radius: 5px 0 0 0;
+}
+
+/*downward connectors from parents*/
+.tree ul ul::before{
+	content: '';
+	position: absolute; top: 0; left: 50%;
+	border-left: 4px solid;
+	width: 0; height: 40px;
+}
+
+.tree li a{
+	border: 3px solid ;
+  margin-top: 23px;
+
+  padding: 50px 50px;
+text-align: center;
+
+	text-decoration: none;
+	font-family: tahoma;
+	font-size: 20px;
+	display: inline-block;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+/*Connector styles on hover*/
+
+      /*
       
       .timeline {
         position: relative;
@@ -301,6 +484,7 @@ box-sizing: border-box;
       /* NEW CONTENT BELOW*/
 
   .header{
+    z-index: -1;
     overflow:auto;
     width:auto;
     height: auto;
