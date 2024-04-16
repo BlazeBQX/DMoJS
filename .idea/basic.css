@@ -398,20 +398,46 @@ p {
   width:90px;
 }
 
-#special{
-  content:none;
-}
+
 
 #specialkendo::after{
-  height:1500px;
+  height:1000px;
 }
 
 #special::after{
   height:700px;
 }
 
-#special::before{
+
+
+#special3{
+  border-top: 4px solid;
+}
+
+#special3::after{
   content:none;
+}
+#special3::before{
+  content:none;
+}
+
+#special4{
+  border-left: 4px solid;
+  height:40px;
+}
+#special4::after{
+  content:none;
+}
+#special4::before{
+  content:none;
+}
+
+.vertical-line{
+  border-left:4px solid;
+  height:400px;
+  padding:0px;
+  margin:0;
+  z-index: -99999px;
 }
 
 
