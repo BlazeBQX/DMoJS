@@ -95,6 +95,9 @@ function showSlides2(n) {
 
 
 
+
+
+
 // Listen for outside click to close modal
 window.onclick = function(event) {
   if (event.target == modal) {
@@ -105,5 +108,8 @@ window.onclick = function(event) {
   }
 
 }
+
+
+
 
 

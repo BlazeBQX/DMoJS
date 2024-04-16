@@ -254,6 +254,21 @@ p {
 
 
 /*modal stuff*/
+.slide-content{
+  position: relative;
+  text-align: right;
+
+  padding-bottom: 10px;
+  margin-bottom: 50px;
+  color:black;
+}
+
+.slide-content img{
+  width: 25%;
+  height: 50%;
+}
+
+
 .text{
   text-align: left;
   position: absolute;
@@ -265,42 +280,13 @@ p {
   margin-left: 10px;
   margin-bottom: 50px;
   box-sizing: border-box;
-
+  color:black;
 }
 
 
 
 
-
-#myBtn  {
-  position: absolute;
-  top: 50%;
-  left: 75%;
-  transform: translate(-200%, -50%);
-  width: 500px;
-  height: 350px;
-  font-size: 50px;
-  font-family: 'Balsamiq Sans';
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-color: #ffffff;
-  -webkit-text-stroke-width: 2px;
-  border-width: 10px;
-  border-color: black;
-  border-radius: 50px; /* Adjust the value to control the roundness */
-  padding: 10px 20px; /* Add padding to make the button more visually appealing */
-  background-color: #6f7cbe; /* Green background color */
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin: 4px 2px;
-}
-#myBtn:hover{
-  color: #111;
-  background: #102fca;
-  box-shadow: 0 0 50px #1466ff;
-}
-
-#myBtn2{
+/*#myBtn2{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -315,25 +301,20 @@ p {
   border-width: 10px;
   border-color: black;
   border-radius: 50px; /* Adjust the value to control the roundness */
-  padding: 10px 20px; /* Add padding to make the button more visually appealing */
-  background-color: #6f7cbe; /* Green background color */
-  text-align: center;
+  /*padding: 10px 20px; /* Add padding to make the button more visually appealing */
+  /*background-color: #6f7cbe; /* Green background color */
+  /*text-align: center;
   text-decoration: none;
   display: inline-block;
   margin: 4px 2px;
-}
+}*/
 
-#myBtn2:hover{
-  color: #111;
-  background: #102fca;
-  box-shadow: 0 0 50px #1466ff;
-}
 
 
 .modal {
   display: none;
-  position: absolute;
-  z-index: 1;
+  position:fixed;
+  z-index: 999999;
   padding-top: 100px;
   left: 0;
   top: 0;
@@ -348,11 +329,12 @@ p {
   padding: 16px 16px;
   background-color: #1E2451;
   color: rgb(131, 122, 226);
-  
+  overflow: visible;
 }
 
 .modal-header h2{
   margin: 5px;
+  font-size: 50px;
 }
 
 
@@ -366,6 +348,7 @@ p {
   height: 90%;
   max-width: 1200px;
   overflow:auto;
+  color:black;
 }
 
 /* The Close Button */
@@ -412,13 +395,26 @@ p {
 
 #special2{
   border-top: 4px solid ;
-  width:65px;
+  width:90px;
+}
 
+#special{
+  content:none;
+}
+
+#specialkendo::after{
+  height:1500px;
 }
 
 #special::after{
   height:700px;
 }
+
+#special::before{
+  content:none;
+}
+
+
 .tree li::after{
 	right: auto; left: 50%;
 	border-left: 4px solid ;
@@ -444,7 +440,15 @@ right connector from last child*/
 	border-radius: 0 5px 0 0;
 	-webkit-border-radius: 0 5px 0 0;
 	-moz-border-radius: 0 5px 0 0;
+  
 }
+
+#specialkendo::before{
+  height:800px;
+}
+
+
+
 .tree li:first-child::after{
 	border-radius: 4px 0 0 0;
 	-webkit-border-radius: 5px 0 0 0;
@@ -460,6 +464,27 @@ right connector from last child*/
 }
 
 .tree li a{
+
+	border: 3px solid ;
+  margin-top: 23px;
+  padding: 50px 10px;
+  text-align: center;
+
+	text-decoration: none;
+	font-family: tahoma;
+	font-size: 20px;
+	display: inline-block;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+  
+}
+
+.tree li button{
 
 	border: 3px solid ;
   margin-top: 23px;
