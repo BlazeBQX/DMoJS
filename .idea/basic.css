@@ -105,7 +105,7 @@ box-sizing: border-box;
 body {
 	font-family: "Roboto", Arial, sans-serif;
 	min-height: 100vh;
-	background-color: #101010;
+	background-color: #1ca7e8;
 }
 
 header {
@@ -233,7 +233,11 @@ p {
 
 
 .tree ul {
-  margin-top: 50px;
+  margin-top: 100px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 100px;
+  z-index: -2;
 	padding-top: 40px; 
   position: relative;
 	transition: all 0.5s;
@@ -241,8 +245,17 @@ p {
 	-moz-transition: all 0.5s;
 }
 
+#myBtn
+#myBtn2
+#myBtn3
+#myBtn4
+#myBtn5{
+  padding: 100px;
+}
+
 .tree li {
 
+  z-index: -9999;
 	float: left; text-align: center;
 	list-style-type: none;
 	position: relative;
@@ -438,7 +451,14 @@ p {
   height:400px;
   padding:0px;
   margin:0;
-  z-index: -99999px;
+  z-index: -99999;
+}
+.horizontal-line{
+  border-top:4px solid;
+  width:900px;
+  padding:0px;
+  margin:0;
+  z-index: -99999;
 }
 
 
