@@ -14,6 +14,9 @@
       .content {
         background-color: #517437;
       }
+      body{
+        background-color:#a0c484;
+      }
       .mid{
         background: linear-gradient(#1D320D, #a0c484);
       }
@@ -32,6 +35,17 @@
       .textCard{
         background: #C1D3A8;
       }
+      mark{
+        color:#517437;
+        background-color: transparent;
+
+      }
+      .modal-content{
+        background-color: #C1D3A8;
+      }
+      p{
+  color:#7ab64c;
+}
       .arrowContainer{
         background-color:#517437
       }
@@ -40,7 +54,31 @@
       background-color: #517437;
        color:#000000
       }
-      
+      header::before {
+background: 
+  linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+       url('https://upload.wikimedia.org/wikipedia/commons/2/25/Fuzoku-High-11.JPG')no-repeat 0px -300px ,
+       linear-gradient(#517437, #7ab64c);;
+}
+     header::before{
+        border-bottom: .2em solid #DBE0FB;
+
+      }
+      .tree li a{	color: #a0c484;
+}
+.tree li a+ul li::after, 
+.tree li a+ul li::before, 
+.tree li a+ul::before, 
+.tree li a+ul ul::before{
+	border-color:  #a0c484;
+}
+.tree li:last-child::before{
+  border-color:  #a0c484;
+}
+      h1{
+        color: #a0c484;
+      }
+
       #myBtn:hover{
       text-decoration: double;
       color:rgb(101, 254, 5);
@@ -155,7 +193,8 @@
      <div class="bar3"></div>
 
          <div id="myDropdown" class="menu-dropdown">
-          <ul>
+          <ul style = "font-size: large;">
+
             <li><a href="http://127.0.0.1:5500/.idea/sumoselection.html">Sumo</a></li>
             <li><a href="http://127.0.0.1:5500/.idea/judoselection.html">Judo</a></li>
             <li><a href="http://127.0.0.1:5500/.idea/kendoselection.html">Kendo</a></li>
@@ -188,7 +227,7 @@
           <h2>Ancient Japan to Edo</h2>
         </div>
         <div class ="slide-content">
-          <img src="assets/images/kendo0.jpg" style="padding-left: 10px;position: fixed;right: 152px;width:500px">
+          <img src="assets/images/kendo0.jpg" style="padding-left: 10px;position: fixed;left:55%;width:500px">
           <div class="text" style="width:50%;margin-left: 30px; margin-bottom: 20px;font-size: 10px">
             <p>Swords and the art of swordsmanship have been a staple to Japanese culture since the beginning of its history. In Kōjiki (712), there are stories of mythological gods that saw swords as symbols of life and peace. There is one story about the sun goddess Amaterasu who broke a sword into three pieces, from which three gods were born. In another story, her brother, Susanoo, killed an eight-headed giant snake, leading him to find a sword inside one of its tails. This sword, Kusanagi-no-Tsurugi, became one of the three Imperial Regalia of Japan.</p>
             <br><br>
@@ -211,7 +250,7 @@
           <h2>Tsukahara Bokuden</h2>
         </div>
         <div class ="slide-content">
-          <img src="assets/images/kendo1.jpg" style="padding-left: 10px;position: fixed;right: 152px;width:500px">
+          <img src="assets/images/kendo1.jpg" style="padding-left: 10px;position: fixed;left:55%;width:500px">
           <div class="text" style="width:50%;margin-left: 30px; margin-bottom: 20px;font-size: 10px">
             <p>Tsukahara Bokuden (1489–1571) was the greatest master of the Shinto-ryū school of kendo. This school focused on teaching students how to attack the opponent’s vulnerable areas such as the neck, armpit, and thigh. Bokuden fought in eighteen duels and 36 battles in which he killed 212 people. Bokuden’s philosophy of martial arts was that it is used to sense danger and avoid it before it strikes. </p>
             <br>
@@ -226,7 +265,7 @@
 
   <div id="myModal3" class = "modal">
 
-    <div class = "modal-content">
+    <div class = "modal-content" >
       <span class="close">&times;</span>
 
       <div class="mySlides3">
@@ -234,8 +273,8 @@
         color: rgb(122, 226, 150);">
           <h2>Hidetsuna Kamiizumi</h2>
         </div>
-        <div class ="slide-content">
-          <img src="assets/images/kendo2.jpg" style="padding-left: 10px;position: fixed;right: 152px">
+        <div class ="slide-content" >
+          <img src="assets/images/kendo2.jpg" style="padding-left: 10px;position: fixed;left:55%;">
           <div class="text" style="width:50%;margin-left: 30px; margin-bottom: 20px;font-size: 10px">
             <p>Hidetsuna Kamiizumi (1508–1577) was a <mark2>Muromachi</mark2>-period swordsman who started his career in Kōzuke province where he serviced the head of Minowa Castle. In 1566, the castle was attacked by the Takeda clan. Kamiizumi, leading the defenses, charged out of the castle and into the enemy forces. This counter was only successful for a short time before the castle eventually fell to the Takeda.
               <br> <br> Kamiizumi’s swordsmanship revolved around “the life-giving sword” (<i>katsujin-ken</i>) and Hidetsuna himself shunned the idea of the “killing sword” (<i>setsunin-tō</i>). These two concepts did not refer to the sword itself, but how the wielder used it. Although he was known to be unrivaled in martial skill, he disliked the idea of killing his challengers and would lean towards pacifism if it was possible. Kamiizumi was most notable for his invention of the bagged bamboo swords (<i>fukuro-shinai</i>). He also established the <mark>Shinkage-ryū</mark> school.</p>
@@ -259,7 +298,7 @@
           <h2>Itō Ittōsai</h2>
         </div>
         <div class ="slide-content">
-          <img src="assets/images/kendo3.jpg" style="padding-left: 10px;position: fixed;right: 152px">
+          <img src="assets/images/kendo3.jpg" style="padding-left: 10px;position: fixed;left:55%;">
           <div class="text" style="width:50%;margin-left: 30px; margin-bottom: 20px;font-size: 10px">
             <p>Itō Ittōsai (1560–1653), a descendant of the <mark2>Kamakura</mark2> family, was a swordsman from Izu Ōshima. When he was fourteen years old, Ittōsai fought and won against a kendo master named Tomita Ippō. After this victory, he was awarded a sword forged by swordsmith Ichimonji of Bizen province. During his stay at a priest’s house, Ittōsai was ambushed by Tomita’s students. Ittōsai defeated all of the attackers, killing the last enemy by slicing through both the attacker and the pot he was hiding behind. Therefore, his sword was named “Ichimonji’s pot-splitting sword” (<i>Kamewari Ichimonji</i>). Ittōsai practiced <mark>musha shugyō</mark>, training under different masters from various parts of Japan. He went around the country with a banner reading, “The best in Japan, Supreme expert of kenjutsu, Itō Ittōsai” which he used as a way to attract good teachers.
               <br> <br> Ittōsai is known for his establishment of the <mark>Ittō-ryū</mark> school. Ittōsai is also known for winning 33 duels in his life. Unlike other prominent swordsmen such as Yagyū Munenori and Miyamoto Musashi, Ittōsai never sought religious enlightenment, prestige, or employment. Instead, he strictly strove to improve his swordsmanship.
@@ -283,7 +322,7 @@
           <h2>Miyamoto Musashi</h2>
         </div>
         <div class ="slide-content">
-          <img src="assets/images/kendo4.jpg" style="padding-left: 10px;position: fixed;right: 152px">
+          <img src="assets/images/kendo4.jpg" style="padding-left: 10px;position: fixed;left:55%;">
           <div class="text" style="width:50%;margin-left: 30px; margin-bottom: 20px;font-size: 10px">
             <p>Miyamoto Musashi (1584–1645) was the most famous swordsman of the seventeenth century who systemized the use of two swords. He wrote <i>The Book of Five Rings</i> (<i>Gorin no Shō</i>) in which he explores the technical side of swordsmanship as well as the philosophy behind the man holding the sword. The Five Rings are categorized into chapters: Earth, Water, Fire, Wind, and Sky. Musashi criticized the <mark>fukuro-shinai</mark> invented by <mark2>Kamiizumi</mark2>, declaring that they were only for cowards. Musashi is thus known for using the stronger and heavier wooden swords (<i>bokken</i>). 
               <br> <br> Musashi had his first duel at thirteen when a samurai posted a sign stating that he would challenge anyone in a duel. Musashi wrote that he would accept the samurai’s challenge and successfully crushed his skull with a wooden sword after throwing him to the ground. Miyamoto would go on to win sixty duels by the time he was 28. Another popular duel between Musashi and <mark2>Sasaki Kojirō</mark2> took place in 1612. Musashi arrived to the duel three hours late and brought a wooden sword that he carved out of an oar. The duel ended when Musashi barely dodged an attack from Kojirō and struck him on the head with his sword. A week before his death in 1645, Muashi wrote <i>The Way of Walking Alone</i> (<i>Dōkkodō</i>). This work consists of 21 precepts on self discipline.</p>
@@ -305,7 +344,7 @@
           <h2>Yagyū Munenori</h2>
         </div>
         <div class ="slide-content">
-          <img src="assets/images/kendo5.jpg" style="padding-left: 10px;position: fixed;right: 152px">
+          <img src="assets/images/kendo5.jpg" style="padding-left: 10px;position: fixed;left:55%;">
           <div class="text" style="width:50%;margin-left: 30px; margin-bottom: 20px;font-size: 10px">
             <p>Yagyū Munenori (1571–1646) is well known for his publication of <i>A Hereditary Book on the Art of War</i> (<i>Heihō kadensho</i>) in 1632. This text explores the religious and philosophical aspects of swordsmanship. For example, Munenori describes how one ought to keep their mind calm when the body is on the offensive. In one chapter, he claims that weapons of war are destructive and killing goes against the “way of heaven” (<i>tendō</i>). Munenori was also a student of a Zen priest known as Sōhō Takuan who influenced his writings. According to Munenori, the purpose of kendo training is to remove “sickness” in the mind. The ultimate goal is a neutral state of mind (<i>byōjōshin</i>). Munenori was also a teacher of the second and third Tokugawa shoguns.</p>
           </div>
@@ -325,7 +364,7 @@
           <h2>Chiba Shūsaku</h2>
         </div>
         <div class ="slide-content">
-          <img src="assets/images/kendo6.jpg" style="padding-left: 10px;position: fixed;right: 152px">
+          <img src="assets/images/kendo6.jpg" style="padding-left: 10px;position: fixed;left:55%;">
           <div class="text" style="width:50%;margin-left: 30px; margin-bottom: 20px;font-size: 10px">
             <p>Chiba Shūsaku (1794–1856) developed the <i>Genbukan</i>, a school established in 1822 in Tokyo. This school became very successful due to Shūsaku’s ability to simplify the eight ranks of <mark>Ittō-ryū</mark> school into three. This led to a reduced fee that students were required to pay that also fueled the popularity of <i>Genbukan</i>. Shūsaku’s emphasis on training both the body and the mind heavily influenced the modernization of kendo during the <mark2>Meiji period</mark2>. According to Shūsaku, speed is victory. 
               <br> <br> He also wrote the <i>Secret Methods of the Sword</i> (<i>Kenpō Hiketsu</i>). In this book, Shūsaku concludes that there are 68 techniques in kendo. Shūsaku also shows his superb ability to teach kendo in the <i>Ten Merits in Striking</i> (<i>kenjutsu uchikomi jūtoku</i>). In this list, Shūsaku highlights points that allow beginners to learn quickly, such as “swing the arms freely” and “move the whole body lightly and freely.” His different teaching methods, such as teaching <mark>uchikomi-keiko</mark> before <mark>kata</mark>, made his dojo become one of the three biggest in Edo.</p>
@@ -346,7 +385,7 @@
           <h2>Yamaoka Tesshū</h2>
         </div>
         <div class ="slide-content">
-          <img src="assets/images/kendo7.jpg" style="padding-left: 10px;position: fixed;right: 152px">
+          <img src="assets/images/kendo7.jpg" style="padding-left: 10px;position: fixed;left:55%;">
           <div class="text" style="width:50%;margin-left: 30px; margin-bottom: 20px;font-size: 10px">
             <p>Yamaoka Tesshū (1836–1888), a student of Chiba Shūsaku, was a samurai who directly served the <mark2>Tokugawa shogunate</mark2> in Edo. After the fall of the shogunate, Tesshū served as an aide to Emperor Meiji (1867-1912), teaching the imperial guards his methods of swordsmanship. Tesshū is known to have systemized the <mark>Mutō-ryū</mark> (no-sword school). In his dojo, beginner students were viciously attacked without instructions. These students were to learn how to defend themselves by being hit in the body multiple times. Students who challenged themselves in this dojo were forced to train from morning to late afternoon. Those strong enough to survive these challenges found blood in their urine and feces. Some also could not differentiate dreams from reality due to severe exhaustion. Tesshū himself is known to have done 200 matches a day for a whole week during training.</p>
           </div>
@@ -423,14 +462,16 @@
 
 
       
-      <div class = "mid" style = "height:fit-content;">
-    
-        <div class = "textCard">
-            <h1></h1>
-        </div>
+  <div class = "mid" style = "height:fit-content;">
+  
+    <div class = "textCard" style = "height: 2700px;top:0%">
+      <header>
+        <h1>KENDO/<ruby>剣道<rt>けんどう</rt></ruby></h1>
+      </header> 
+    </div>
        
 
-        <div class="tree" style = "position:relative;top:100px;height:fit-content;padding-bottom: 600px;z-index: 9999;">
+        <div class="tree" style = "position:relative;top:200px;height:fit-content;padding-bottom: 600px;z-index: 9999;">
 
           <ul>
             <li style="transform: translate(75px, 0px)">

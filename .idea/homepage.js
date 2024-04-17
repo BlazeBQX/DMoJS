@@ -1,17 +1,20 @@
 let slideIndex = 1;
-carousel(slideIndex);
+let timeOut=8000;
+carousel(slideIndex,0);
 
 function plusSlides() {
-    clearTimeout();
+  clearTimeout(timeOut);
+
     carousel(slideIndex += 1);
   }
 function minusSlides(){
-    clearTimeout();
+  clearTimeout(timeOut);
+
     carousel(slideIndex -=1);
     
 }
   function currentSlide(n) {
-    clearTimeout();
+    clearTimeout(timeOut);  
     carousel(slideIndex = n);
   }
 function carousel(n) {
@@ -30,8 +33,8 @@ function carousel(n) {
 
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
-  setTimeout(plusSlides,8000);
-  
+  timeOut=setTimeout(plusSlides,8000);
+
 }
 
 function toggleMenu(x) {
