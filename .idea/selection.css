@@ -128,8 +128,11 @@
             color:purple;
           }
           body {
-            background-color: #474e5d;
+            background-color: #e1def7;
             font-family: Helvetica, sans-serif;
+            position:relative;
+            padding:0;
+            margin: 0% 0% 0% 0%;
           }
           
           .timeline {
@@ -298,7 +301,7 @@
             }
           }
         
-          /* NEW CONTENT BELOW*/
+          /* HEADER BELOW*/
     
       .header{
         overflow:auto;
@@ -375,6 +378,63 @@
     transition: opacity 0.4s;
     }
 
-    img:hover{
-        filter: brightness(50%);        
+    .boxes{
+      background:rgba(0,0,0,0);
+      position:relative;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      margin-top: 150px;
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+
+     .column{
+      position:relative;
+      display:inline-block;
+      border: 4px solid white;
+      margin-left: 160px;
+      margin-right: 160px;
+    }
+
+    .column img{
+      opacity:0.7;
+    }
+
+    /* sporticon text */
+    .column .image-overlay1 p{
+      opacity:0%;
+      position:absolute;
+      bottom:50%;
+      font-size:33px;
+      margin-left:170px;
+      color:#E1DEF5;
+      background:rgba(0,0,0);
+      border: 1px solid white;
+    }
+
+    /* rulesicon text */
+    .column .image-overlay2 p{
+      opacity:0%;
+      position:absolute;
+      bottom:50%;
+      font-size:33px;
+      margin-left:85px;
+      color: #E1DEF5;
+      background:rgba(0,0,0);
+      border: 1px solid white;
+    }
+
+    .column:hover img{
+      opacity:1.0;
+      transition: opacity 0.3s ease-in-out; 
+    }
+
+    .column:hover .image-overlay1 p, .column:hover .image-overlay2 p{
+      opacity:100%;
+      transition: opacity 0.3s ease-in-out; 
+    }
+
+    .column:hover{
+      transition:background-color 0.7s;
     }
