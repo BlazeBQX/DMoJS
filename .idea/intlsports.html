@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "basic.css">
+    <title>Homepage</title>
+
+    <style>
+      .header{
+        background-color:#0d321c;
+      }
+      .content {
+        background-color: #b5c257;
+      }
+      .mid{
+        background: linear-gradient(#1D320D, #a0c484);
+      }
+      .left::before{
+        border-color: transparent transparent transparent #517437;
+      }
+      .right::before{
+        border-color: transparent #517437 transparent transparent;
+      }
+      .container::after{
+        border: 4px solid #1D320D;
+      }
+      .timeline::after{
+        background-color: #1D320D;
+      }
+      .textCard{
+        background: #C1D3A8;
+      }
+      .arrowContainer{
+        background-color:#517437
+      }
+
+      button{
+        font-size:100px;
+       border-color: black;
+      background-color: #e6c0e7;
+       color:#000000
+      }
+      h1{
+        color: #C1D3A8;
+      }
+      header::before {
+background: 
+  linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+       url('https://upload.wikimedia.org/wikipedia/commons/9/90/%E3%82%B5%E3%83%8B%E3%83%83%E3%82%AF%E3%82%B9Cup2019%EF%BC%89%E9%96%8B%E4%BC%9A%E5%BC%8F.jpg')no-repeat 0px -500px,
+     linear-gradient(#1D320D, #517437);;
+}
+
+#myBtn:hover{
+      
+      text-decoration: double;
+      color:rgb(254, 105, 5);
+      
+      background-size: cover;
+      background-image: url(assets/images/wata.jpg);
+      box-shadow: 0 0 50px #ff8914;
+}
+
+#myBtn2:hover{
+      text-decoration: double;
+      color:rgb(183, 254, 5);
+      font-weight: 300;
+      background-size: cover;
+      background-image: url(assets/images/riki.jpg);
+      box-shadow: 0 0 50px #a9ff14;
+}
+#myBtn3:hover{
+      text-decoration: double;
+      color:rgb(183, 254, 5);
+      font-weight: 300;
+      background-size: cover;
+      background-image: url(assets/images/antonio.jpg);
+      box-shadow: 0 0 50px #a9ff14;
+}
+
+#myBtn4:hover{
+      text-decoration: double;
+      color:rgb(5, 250, 254);
+      font-weight: 300;
+      background-size: cover;
+      background-image: url(assets/images/midori.jpg);
+      box-shadow: 0 0 50px #14e4ff;
+}
+
+#myBtn5:hover{
+      text-decoration: double;
+      color:rgb(183, 5, 254);
+      font-weight: 300;
+      background-size: cover;
+      background-image: url(assets/images/icho.jpg);
+      box-shadow: 0 0 50px #ad14ff;
+}
+
+#myBtn6:hover{
+      text-decoration: double;
+      color:rgb(13, 5, 254);
+      font-weight: 300;
+      background-size: cover;
+      background-image: url(assets/images/kunishige.jpg);
+      box-shadow: 0 0 50px #2b14ff;
+}
+
+#myBtn7:hover{
+      text-decoration: double;
+      color:rgb(183, 5, 254);
+      font-weight: 300;
+      background-size: cover;
+      background-image: url(assets/images/yoshia.jpg);
+      box-shadow: 0 0 50px #ad14ff;
+}
+
+#myBtn8:hover{
+      text-decoration: double;
+      color:rgb(5, 250, 254);
+      font-weight: 300;
+      background-size: cover;
+      background-image: url(assets/images/mao.jpg);
+      box-shadow: 0 0 50px #14e4ff;
+}
+
+#myBtn9:hover{
+      text-decoration: double;
+      color:rgb(5, 250, 254);
+      font-weight: 300;
+      background-size: cover;
+      background-image: url(assets/images/hanyu.jpg);
+      box-shadow: 0 0 50px #14e4ff;
+}
+
+#myBtn10:hover{
+      text-decoration: double;
+      color:rgb(13, 5, 254);
+      font-weight: 300;
+      background-size: cover;
+      background-image: url(assets/images/nadeshiko.jpg);
+      box-shadow: 0 0 50px #2b14ff;
+}
+
+#myBtn11:hover{
+      text-decoration: double;
+      color:rgb(254, 105, 5);
+      font-weight: 300;
+      background-size: cover;
+      background-image: url(assets/images/watanabe.jpg);
+      box-shadow: 0 0 50px #ff8914;
+}
+
+#myBtn12:hover{
+      text-decoration: double;
+      color:rgb(254, 105, 5);
+      font-weight: 300;
+      background-size: cover;
+      background-image: url(assets/images/hachimura.jpg);
+      box-shadow: 0 0 50px #ff8914;
+}
+    </style>
+
+</head>
+<body>
+    <script src = "starter.js"></script>
+
+    
+    <!-- header code begins here-->
+<div class="header">
+  <div class="menu-icon"  onclick="toggleMenu(this)" style="float:left;">
+     <div class="bar1"></div>
+     <div class="bar2"></div>
+     <div class="bar3"></div>
+
+         <div id="myDropdown" class="menu-dropdown">
+          <ul style = "font-size: large;">
+            <li><a href="http://127.0.0.1:5500/.idea/sumoselection.html">Sumo</a></li>
+            <li><a href="http://127.0.0.1:5500/.idea/judoselection.html">Judo</a></li>
+            <li><a href="http://127.0.0.1:5500/.idea/kendoselection.html">Kendo</a></li>
+            <li><a href="http://127.0.0.1:5500/.idea/yakyu.html">Yakyū</a></li>
+            <li><a href="http://127.0.0.1:5500/.idea/sportsday.html">Sports Day</a></li>
+            <li><a href="http://127.0.0.1:5500/.idea/intlsports.html">International Sports</a></li>
+         </ul></div>
+     </div>
+     <div class="logo">
+      <a href="http://127.0.0.1:5500/.idea/homepage.html"> 
+        <img src = "assets/images/dmojslogo.jpg"
+          width="40" 
+          height="40">
+     </div></a>
+</div>
+<!-- header code ends here-->
+
+</body>
+
+
+<body>
+
+  <div id="myModal" class = "modal">
+
+    <div class = "modal-content">
+      <span class="close">&times;</span>
+
+        <div class="modal-header" style="background-color: #1D320D;
+        color: rgb(122, 226, 150);">
+          <h2>Wataru “Wat” Misaka</h2>
+        </div>
+        <div class ="slide-content">
+          <img src="assets/images/wata.jpg" style="padding-left: 10px;position: fixed;left:55%">
+          <div class="text" style="width:50%;margin-left: 30px; margin-bottom: 20px;font-size: 10px">
+            <p>Wataru Misaka (1923–2019) was born in Ogden, Utah as a Nisei. He claimed that the area he grew up in was a “ghetto,” rife with prostitution and gambling. 
+              <br><br> Misaka was given the nickname “Wat” by his high school friends, who couldn’t pronounce his given name, Wataru. He found early success in basketball, leading Ogden High School to a state championship in 1940 and a regional championship in 1941.
+              <br><br> Misaka managed to avoid the internment camps that many Japanese Americans along the west coast faced after the bombing of Pearl Harbor. He went on to play for Weber College where he won back to back Intermountain Collegiate Athletic Conference (ICAC) Championships and was named the MVP in the 1942 postseason tournament. Misaka enrolled at the University of Utah in 1943 and went on to win the NCAA tournament with them in his first year.
+              <br><br> Misaka’s basketball career then took a brief pause when he was drafted into the US Army and served with occupation forces in Hiroshima, interviewing survivors of the atomic bomb. Misaka described his time in the Army as a “personal no-man’s land.”
+              <br><br> Misaka returned to play for the Utah Utes in 1946 and won the National Invitation Tournament (NIT). Misaka is most notable for being drafted by the New York Knicks and being the first non-caucasian to play a game in the National Basketball Association (NBA), then Basketball Association of American (BAA).
+            </p>
+          </div>
+        </div>
+     
+    </div>
+  </div>
+
+<div id="myModal2" class = "modal">
+
+    <div class = "modal-content">
+      <span class="close">&times;</span>
+
+      <div class="mySlides2">
+        <div class="modal-header" style="background-color: #1D320D;
+        color: rgb(122, 226, 150);">
+          <h2>Rikidōzan</h2>
+        </div>
+        <div class ="slide-content">
+          <img src="assets/images/riki.jpg" style="padding-left: 10px;position: fixed;left:55%">
+          <div class="text" style="width:50%;margin-left: 30px; margin-bottom: 20px;font-size: 10px">
+            <p>Kim Sin-Rak (1924–1963) was born in South Korea in 1924. He is better known by his ring name Rikidōzan. Kim originally aspired to be a sumo wrestler in Japan, but because of discrimination against Koreans, he adopted the Japanese name Mitsuhiro Momota. Before wrestling, he had a fairly successful sumo career achieving a record of 135-82. 
+              <br><br> Rikidōzan started starting competing in professional wrestling in 1951 and quickly gained massive popularity. His growth was largely due to his success over American wrestlers, which the Japanese public really enjoyed for obvious reasons. Due to his popularity in the early stages of Japanese wrestling, he is considered “The Father of Japanese Wrestling.” 
+              <br><br> The match that made Rikidōzan the most popular was his victory over Fred Blassie in 1952. The match was controversially ended due to a curfew and the World Wrestling Association Heavyweight Title Belt was awarded to Rikidōzan. Blassie made a huge deal of the situation claiming that he had been robbed, and when Rikidōzan returned to Japan, Blassie followed. Blassie made a scene in Japan as well which only increased Rikidōzan’s popularity.
+              <br><br> Blassie eventually won back his title in April 1962. But, tragically, Rikidōzan was murdered in 1963 at only 39 years old. His killer, part of a yakuza organization, used a knife soaked in urine to stab him. He died a week later due to peritonitis. The man who murdered him only served seven years in prison for manslaughter.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="myModal3" class = "modal">
+
+    <div class = "modal-content">
+      <span class="close">&times;</span>
+
+      <div class="mySlides3">
+        <div class="modal-header" style="background-color: #1D320D;
+        color: rgb(122, 226, 150);">
+          <h2>Antonio Inoki</h2>
+        </div>
+        <div class ="slide-content">
+          <img src="assets/images/antonio.jpg" style="padding-left: 10px;position: fixed;left:55%">
+          <div class="text" style="width:50%;margin-left: 30px; margin-bottom: 20px;font-size: 10px">
+            <p>Inoki Kanji (1943–2022) better known by his ring name, Antonio Inoki, spent much of his youth in Brazil and was a talented athlete. He became a national star in shot put and discus. It was in Brazil though, where Inoki met Rikidōzan. Rikidōzan, who is widely considered the most popular Japanese wrestler of all time, convinced Inoki to return to Japan to join the Japan Wrestling Association (JWA).
+              <br><br> Inoki had some success in the JWA, but founded his own wrestling promotion in 1972 named New Japan Pro Wrestling (NJPW). This is where Inoki found his most success. He utilized both Japanese stars and American superstars alike to build something unique and exciting. Inoki himself was a star in the promotion and fought big names like Hulk Hogan and Ric Flair.
+              <br><br> Inoki’s biggest match was against the legendary boxer Muhammad Ali. This match was a rare occurrence of a boxer fighting a wrestler, and the match itself was not particularly exciting. It did however open the gates for a boom in popularity to Mixed Martial Arts (MMA). 
+              <br><br> After his wrestling career, Inoki spent twelve years as a politician. During his time as a politician he attempted to improve relations between Japan and North Korea.  As a tribute to Inoki’s legacy in the world of professional wrestling, the WWE inducted him into the WWE Hall of Fame in 2010. Inoki also appears in several manga and anime.
+
+            </p>
+          </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div id="myModal4" class = "modal">
+
+    <div class = "modal-content">
+      <span class="close">&times;</span>
+
+      <div class="mySlides4">
+        <div class="modal-header" style="background-color: #1D320D;
+        color: rgb(122, 226, 150);">
+          <h2>Itō Midori</h2>
+        </div>
+        <div class ="slide-content">
+          <img src="assets/images/midori.jpg" style="padding-left: 10px;position: fixed;left:55%">
+          <div class="text" style="width:50%;margin-left: 30px; margin-bottom: 20px;font-size: 10px">
+            <p>Midori Ito was born in 1969 in Nagoya, Japan. Her figure skating was characterized by her strong jumps and unmatchable speed, and her technical skills and routines were on par with the top male figure skaters of that time. In 1988, Midori Ito became the first woman to successfully land a triple axel in international competition during her freeskate in the Calgary Olympics. The following year, at the 1989 World Figure Skating Championships, she earned her place as the first Asian woman to have won the world title in figure skating. In 1993, she won the pro world title at the World Professional Figure Skating Championships. Five years later, Ito was asked to light the flame of the Nagano 1998 Winter Olympics. Other accomplishments include being the first woman to land a triple-triple jump combination, being the first woman to perform six distinct triple jumps in competition, and she was also a 1992 Olympic silver medalist.
+
+            </p>
+          </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div id="myModal5" class = "modal">
+
+    <div class = "modal-content">
+      <span class="close">&times;</span>
+
+      <div class="mySlides5">
+        <div class="modal-header" style="background-color: #1D320D;
+        color: rgb(122, 226, 150);">
+          <h2>Ichō Kaori</h2>
+        </div>
+        <div class ="slide-content">
+          <img src="assets/images/icho.jpg" style="padding-left: 10px;position: fixed;left:55%">
+          <div class="text" style="width:50%;margin-left: 30px; margin-bottom: 20px;font-size: 10px">
+            <p>Ichō Kaori (1984–) is most well known for being the first woman to win four consecutive Olympic gold medals in a single event. She is one of only six individuals to achieve four Olympic golds in the same event with elite company such as the legendary Michael Phelps (1985–).
+              <br> <br> Ichō completely dominated her weight class (63kg) for over a decade going undefeated from 2003-2016. In this time, she amassed a world record 189 win-streak in women’s international wrestling. Throughout her career she was a 4x Olympic Gold Medalist, 10x World Wrestling Champion, 5x Asian Wrestling Champion, and one time Asian Games Champion.
+              <br> <br> Her dominance in women’s freestyle wrestling is only equaled by Yoshida Saori, who ruled over the 55kg weight class in the same era. The two are also the only two wrestlers to receive the People’s Honour Award, which is given to those whose accomplishments inspire the Japanese people.
+
+
+            </p>
+          </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="myModal6" class = "modal">
+
+    <div class = "modal-content">
+      <span class="close">&times;</span>
+
+      <div class="mySlides6">
+        <div class="modal-header" style="background-color: #1D320D;
+        color: rgb(122, 226, 150);">
+          <h2>Kamamoto Kunishige</h2>
+        </div>
+        <div class ="slide-content">
+          <img src="assets/images/kunishige.jpg" style="padding-left: 10px;position: fixed;left:55%">
+          <div class="text" style="width:50%;margin-left: 30px; margin-bottom: 20px;font-size: 10px">
+            <p>Kamamoto Kunishige (1944–) is known as one of the best soccer players to come out of Japan, and is especially known for his scoring. He was the Kanto University League’s top scorer for four years in a row while attending Waseda University from 1963-1966. He also won the Emperor’s Cup twice while at Waseda, once in 1963 and again in 1966.
+              <br> <br> After graduating from Waseda University, Kamamoto joined Yanmar Diesel, a Japanese Soccer League (JSL) team. He spent his entire career with the club, scoring 202 goals in 251 games. His 202 goals are the most by any player in JSL history. Kamamoto won the league title four times with Yanmar Diesel (1971, 1974, 1975, 1980). He also won the Emperor’s Cup three times while with the club (1968, 1970, 1974). His individual achievements with the club include 7x JSL top scorer, 3x JSL assist leader, 7x Player of the Year.
+              <br> <br> In his career, Kamamoto played in 76 games for the national team, scoring 75 goals in those games. His greatest accomplishment with the national team was a bronze medal in the 1968 Summer Olympics. He was also the top scorer throughout the 1968 games, scoring 7 goals.
+              <br> <br> After retirement Kamamoto had a short and relatively lackluster career as a manager. After which, he became a member of the House of Councillors and served from 1995 to 2001. During this time he also served as the Vice-President of the Japan Football Hall of Fame, which he did for 10 years from 1998 to 2008. In 2005 Kamamoto was inducted into the Japanese Football Hall of Fame.
+
+            </p>
+          </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="myModal7" class = "modal">
+
+    <div class = "modal-content" >
+      <span class="close">&times;</span>
+
+      <div class="mySlides7">
+        <div class="modal-header" style="background-color: #1D320D;
+        color: rgb(122, 226, 150);">
+          <h2>Yoshida Saori</h2>
+        </div>
+        <div class ="slide-content">
+          <img src="assets/images/yoshia.jpg" style="padding-left: 10px;position: fixed;left:55%">
+          <div class="text" style="width:50%;margin-left: 30px; margin-bottom: 20px;font-size: 10px">
+            <p>Yoshida Saori (1982–) began wrestling at just three years of age, and has stated that her only childhood memories are of wrestling. Her father, Yoshida Eikatsu (1953–2014), won a national championship in 1973 and was her youth coach.
+              <br> <br> Yoshida began her freestyle wrestling career in 1998 as a cadet and went undefeated for a decade until her loss at the 2008 World Cup snapped the 119 match streak. She is one of the most dominant freestyle wrestlers of all time, winning all but one of the major championships she participated in. She is a 13x World Wrestling Champion, 3x Olympic Gold Medalist, 4x Asian Games Champion, and 4x Asian Wrestling Champion. Her three Olympic golds are tied for second most in a single event.
+              <br> <br> Across her entire senior career, Yoshida only lost three times. She retired in 2019 and was a key member of the lobbying team to keep wrestling in the 2020 Tokyo Olympics. She is also one of only two wrestlers who have received the prestigious People’s Honour Award.
+            </p>
+          </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="myModal8" class = "modal">
+
+    <div class = "modal-content">
+      <span class="close">&times;</span>
+
+      <div class="mySlides8">
+        <div class="modal-header" style="background-color: #1D320D;
+        color: rgb(122, 226, 150);">
+          <h2>Asada Mao</h2>
+        </div>
+        <div class ="slide-content">
+          <img src="assets/images/mao.jpg" style="padding-left: 10px;position: fixed;left:55%">
+          <div class="text" style="width:50%;margin-left: 30px; margin-bottom: 20px;font-size: 10px">
+            <p>Asada Mao was born in Nagoya, Japan in 1990. In 2004, Asada Mao won the ISU (International Skating Union) 2004 Junior Grand Prix on her first attempt and was also the first junior ladies’ competitor to land the triple axel that same competition. She been the Grand Prix Final champion four times in the years 2004-2005, 2008-2009, 2012-2013, and 2013-2014 as well as a three-time world champion in the years 2008, 2010, and 2013. After claiming first place in 2013’s Skate America, she became the first singles skater in history to win all seven events of the Grand Prix series. At the Vancouver Winter Games in 2010, Asada Mao won Olympic silver, and later, she also set a world record score in the women’s short program during the 2014 World Championships until it was broken two years later by Evgenia Medvedeva. She retired in 2017 to instead skate in ice shows professionally.  
+            </p>
+          </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="myModal9" class = "modal">
+
+    <div class = "modal-content">
+      <span class="close">&times;</span>
+
+      <div class="mySlides9">
+        <div class="modal-header" style="background-color: #1D320D;
+        color: rgb(122, 226, 150);">
+          <h2>Hanyū Yuzuru</h2>
+        </div>
+        <div class ="slide-content">
+          <img src="assets/images/hanyu.jpg" style="padding-left: 10px;position: fixed;left:55%">
+          <div class="text" style="width:50%;margin-left: 30px; margin-bottom: 20px;font-size: 10px">
+            <p>Yuzuru Hanyu was born in 1994 in Sendai, Japan. Yuzuru Hanyu is the first Asian male to win Olympic gold in figure skating, which he earned at the 2014 Sochi Winter Olympics, and at nineteen years old became the youngest male skater to win Olympic gold since Dick Button in 1948. Yuzuru Hanyu is also the first figure skater to land a quadruple loop which he did at the 2016 Autumn Classic International competition. In 2018, Japanese Prime Minister Shinzo Abe presented the People’s Honor Award to 23-year-old Yuzuru Hanyu for being the first male figure skater to win two gold medals consecutively (2014, 2018) since Richard Button in 1952, making him the youngest recipient of the award. He has broken world records nineteen times and was the first men’s singles skater to complete ‘Super Slam’ by winning all major junior and senior competitions. He retired in 2022 and now skates professionally in ice shows.</p>
+          </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="myModal10" class = "modal">
+
+    <div class = "modal-content">
+      <span class="close">&times;</span>
+
+      <div class="mySlides10">
+        <div class="modal-header" style="background-color: #1D320D;
+        color: rgb(122, 226, 150);">
+          <h2>Nadeshiko Japan (Japan’s Women’s National Soccer Team)
+          </h2>
+        </div>
+        <div class ="slide-content">
+          <img src="assets/images/nadeshiko.jpg" style="padding-left: 10px;position: fixed;left:55%">
+          <div class="text" style="width:50%;margin-left: 30px; margin-bottom: 20px;font-size: 10px">
+            <p>Nadeshiko Japan is the Japanese women’s national soccer team. They got the nickname Nadeshiko Japan from a contest held by the Japan Football Association (JFA) in 2004.
+              <br> <br> Japan’s women’s national team has historically had more success than the men’s team, and 2011 was their most successful year to date. In the 2011 FIFA Women’s World Cup, Nadeshiko Japan beat two-time defending champions Germany in the quarterfinals and then breezed past Sweden to make it to the finals. They then beat the United States in a penalty shootout 3-1 after regulation ended 2-2. The team also received the People’s Honor Award, an award which is given to those whose accomplishments inspire society.
+              <br> <br> The team has also had multiple other successful seasons amassing dozens of medals. They are 2x AFC Women’s Asian Cup gold medalists (2014, 2018) and 3x Asian Games gold medalists (2010, 2018, 2022). They have also earned 14 silver medals in tournaments, most notably in the 2012 Olympic Games and the 2015 FIFA Women’s World Cup.
+
+            </p>
+          </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="myModal11" class = "modal">
+
+    <div class = "modal-content">
+      <span class="close">&times;</span>
+
+      <div class="mySlides11">
+        <div class="modal-header" style="background-color: #1D320D;
+        color: rgb(122, 226, 150);">
+          <h2>Watanabe Yūta</h2>
+        </div>
+        <div class ="slide-content">
+          <img src="assets/images/watanabe.jpg" style="padding-left: 10px;position: fixed;left:55%">
+          <div class="text" style="width:50%;margin-left: 30px; margin-bottom: 20px;font-size: 10px">
+            <p>Watanabe Yūta (1994–) was was fond of basketball from a young age due to his family's history in the sport. His father played professionally in Japan, his mother played for the national team, and his sister is in the Women’s Japan Basketball League. 
+              <br><br> At just sixteen years old, Watanabe played for the senior national team. He also led his high school to the finals at nationals in eleventh and twelfth grade. Watanabe received a three star recruit rating in the United States, which led to offers from some colleges. Ultimately, he accepted an offer from George Washington University, becoming only the third Japanese native to receive an NCAA Division I basketball scholarship, behind Matsui “KJ” Keijuro and Ito Tashi. Although there has been Japanese-Americans, like Rex Walters, who received D1 scholarships prior to Watanabe. During his college career, Watanabe received multiple awards: Third-team All-Atlantic 10 (2018), 2x Atlantic 10 All-Defensive Team (2017, 2018), and most notably Atlantic 10 Defensive Player of the Year (2018). 
+              <br><br> Watanabe went undrafted in the 2018 NBA Draft, but signed a contract with the Memphis Grizzlies. Since then he has had short stints with four teams including the Grizzlies, Toronto Raptors, Brooklyn Nets, and the Phoenix Suns. His best season thus far was his 2022–2023 season with the Brooklyn Nets in which he recorded a 44.4% three point shooting percentage. After not seeing much playing time with the Phoenix Suns, he was traded back to the Memphis Grizzlies in 2024.
+            </p>
+
+          </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="myModal12" class = "modal">
+
+    <div class = "modal-content">
+      <span class="close">&times;</span>
+
+      <div class="mySlides12">
+        <div class="modal-header" style="background-color: #1D320D;
+        color: rgb(122, 226, 150);">
+          <h2>Hachimura Rui</h2>
+        </div>
+        <div class ="slide-content">
+          <img src="assets/images/hachimura.jpg" style="padding-left: 10px;position: fixed;left:55%">
+          <div class="text" style="width:50%;margin-left: 30px; margin-bottom: 20px;font-size: 10px">
+            <p>Hachimura Rui (1998–) is most well known for being the first native Japanese player to be selected in the first round of the NBA Draft. Hachimura played both basketball and baseball growing up. His given name, Rui, was even inspired by baseball, meaning “base” both in the context of baseball and also meaning “fortress.”  
+              <br><br>In high school, Hachimura led his school to three straight titles in the All-Japan High School Tournament (2013-2015). Hachimura was a four star recruit coming out of high school, but college programs were concerned with his English proficiency. Ultimately, Hachimura met the SAT requirements for eligibility before his freshman season, and he decided to attend Gonzaga University. During his three seasons as a Gonzaga Bulldog, Hachimura won West Coast Conference (WCC) Player of the Year (2019), and was 2x First-team All-WCC (2018, 2019). Hachimura was also the first Japanese native to ever play in the NCAA Division I men’s tournament. There have been Japanese-Americans who have played in the tournament prior to Hachimura, however, like Rex Walters.
+              <br><br> In 2019, Hachimura became the first native Japanese player to be selected in the first round of the NBA Draft and only the second native Japanese player to be drafted, behind Okayama Yasutaka. There were two Japanese-Americans drafted before Hachimura: Wataru Misaka and Rex Walters. He was drafted 9th overall by the Washington Wizards, playing for them for four seasons. Hachimura missed considerable time due to injury and personal reasons while with the Wizards, resulting in his trade to the Los Angeles Lakers in 2023. In his first season with the Lakers, the team made it to the Western Conference Finals, but lost to the Denver Nuggets who went on to win the Championship. In his second season with the team, Hachimura and the Lakers won the inaugural season of the NBA In-Season Tournament. Hachimura has proven to be a solid player coming off of the bench averaging around 12 points per game in 24 minutes per game on average across his first two seasons with the Lakers.
+
+            </p>
+
+          </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+      
+      <div class = "mid" style = "height:fit-content;">
+    
+        <div class = "textCard" style = "height: 3000px;top:0%">
+          <header>
+            <h1>International Sports</h1>
+          </header> 
+        </div>
+      
+
+        <div class="tree" style = "position:relative;top:100px;height:fit-content;padding-bottom: 0px;z-index: 9999;">
+
+          
+          <ul>
+            <li style="transform: translate(-400px, 200px)">
+              <button id="myBtn" style="width:300px;height:200px">Wataru “Wat” Misaka</button>
+            </li>
+          </ul>
+         
+          <div class="vertical-line" style="transform: translate(250px, 70px);position: absolute;height:2500px;z-index:-100"></div>
+          <div class="horizontal-line" style="transform: translate(-150px, 550px);position: absolute;width:400px;"></div>
+          <div class="horizontal-line" style="transform: translate(-150px, 200px);position: absolute;width:400px;"></div>
+          <div class="horizontal-line" style="transform: translate(250px, 325px);position: absolute;width:400px;"></div>
+          <div class="horizontal-line" style="transform: translate(250px, 625px);position: absolute;width:400px;"></div>
+          <div class="horizontal-line" style="transform: translate(-150px, 825px);position: absolute;width:400px;"></div>
+          <div class="horizontal-line" style="transform: translate(-150px, 1200px);position: absolute;width:400px;"></div>
+          <div class="horizontal-line" style="transform: translate(-150px, 1550px);position: absolute;width:400px;"></div>
+          <div class="horizontal-line" style="transform: translate(-150px, 1950px);position: absolute;width:400px;"></div>
+          <div class="horizontal-line" style="transform: translate(250px, 925px);position: absolute;width:400px;"></div>
+          <div class="horizontal-line" style="transform: translate(250px, 1325px);position: absolute;width:400px;"></div>
+          <div class="horizontal-line" style="transform: translate(250px, 1700px);position: absolute;width:400px;"></div>
+          <div class="horizontal-line" style="transform: translate(250px, 2070px);position: absolute;width:400px;"></div>
+          
+         
+         
+          <ul>
+            <li style="transform: translate(550px, 50px);"> 
+              <button id="myBtn2" style="width:300px;height:200px">Rikidōzan</button>
+            </li>
+            
+          </ul>
+          
+          <ul>
+            <li style="transform: translate(-325px, 0px);">
+              <button id="myBtn3" style="width:300px;height:200px">Antonio Inoki</button>
+            </li>
+          </ul>
+          
+          <ul>
+            <li style="transform: translate(-400px, 100px);">
+              <button id="myBtn4" style="width:300px;height:200px" >Itō Midori</button>
+            </li>
+          </ul>
+          
+          <ul>
+            <li style="transform: translate(-300px, 200px);">
+              <button id="myBtn5" style="width:300px;height:200px">Ichō Kaori</button>
+            </li>
+          </ul>
+
+          <ul>
+            <li style="transform: translate(450px, -650px);">
+              <button id="myBtn6" style="width:300px;height:200px">Kamamoto Kunishige</button>
+            </li>
+          </ul>
+
+          <ul>
+            <li style="transform: translate(350px, -550px);">
+              <button id="myBtn7" style="width:300px;height:200px">Yoshida Saori</button>
+            </li>
+          </ul>
+
+          <ul>
+            <li style="transform: translate(350px, -400px);">
+              <button id="myBtn8"style="width:300px;height:200px" >Asada Mao</button>
+            </li>
+          </ul>
+
+          <ul>
+            <li style="transform: translate(550px, -250px);">
+              <button id="myBtn9" style="width:300px;height:200px">Hanyū Yuzuru</button>
+            </li>
+          </ul>
+          
+          <ul>
+            <li style="transform: translate(-400px, -700px);">
+              <button id="myBtn10"style="width:300px;height:200px" >Nadeshiko Japan</button>
+            </li>
+          </ul>
+         
+          <ul>
+            <li style="transform: translate(-400px, -500px);">
+              <button id="myBtn11" style="width:300px;height:200px" >Watanabe Yūta</button>
+            </li>
+          </ul>
+
+          <ul>
+            <li style="transform: translate(550px, -600px);">
+              <button id="myBtn12"  style="width:300px;height:200px">Hachimura Rui</button>
+            </li>
+          </ul>
+         
+        
+        
+        
+          
+        
+          <script src="intltimeline.js"></script>
+        
+          </div>
+          
+        </body>
+        </html>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <!--<div class="timeline">
+
+          <div class="imageContainerR">
+            <img id = "image0" src="assets/images/kendo1.jpg" ALIGN = "right" style= "width:250px;height:200px"/>
+            <div class = "dropdown-content">
+              <p>Image references here</p>
+            </div>
+          </div>   
+  <div class="container left">
+    <div class="content">
+      <h2>Tsukahara Bokuden</h2>
+      <br>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus augue velit, condimentum porta dignissim nec, egestas sed est. Fusce id ipsum at ligula mattis fringilla.Ut elementum metus sed nibh finibus scelerisque ac semper odio. Donec vitae maximus nisi, vitae egestas felis. </p>
+      <div class = "arrowContainer">
+        <div onclick = "contentDropWHL(0,400,300,50)" class="arrow"></div>
+      </div>
+          <br>
+          <div class="expanded-content fade">
+      <p ALIGN= "left"> 
+        <br> <br> Tsukahara Bokuden (1489–1571) was the greatest master of the <mark>Shinto-ryū</mark> school of kendo. This school focused on teaching students how to attack the opponent’s vulnerable areas such as the neck, armpit, and thigh. Bokuden fought in eighteen duels and 36 battles in which he killed 212 people. Bokuden’s philosophy of martial arts was that it is used to sense danger and avoid it before it strikes. 
+        <br> <br> At 27 years old, Bokuden stayed at <mark2>Kashima shrine</mark2> for a thousand days to reach enlightenment. During this period, Bokuden did not speak to anyone and had a strict diet of grains. Bokuden was also a close acquaintance of Takeda Shingen whom he followed to the <mark2>Battle of Kawanakajima</mark2>.
+        </p >
+          </div>
+    </div>
+  </div>
+
+  <div class="imageContainerL" style = "left:30%">
+    <img id = "image1" src="assets/images/kendo2.jpg" ALIGN = "right" style= "width:200px;height:200px"/>
+    <div class = "dropdown-content">
+      <p>Image references here</p>
+    </div>
+  </div>   
+  <div class="container right">
+    <div class="content">
+      <h2>Hidetsuna Kamiizumi </h2>
+      <br>
+      <div class = "arrowContainer">
+        <div onclick = "contentDropWHL(1,300,300,24)" class="arrow"></div>
+      </div>
+          <br>
+          <div class="expanded-content fade">
+      <p ALIGN= "left"> Hidetsuna Kamiizumi (1508–1577) was a <mark2>Muromachi</mark2>-period swordsman who started his career in Kōzuke province where he serviced the head of Minowa Castle. In 1566, the castle was attacked by the Takeda clan. Kamiizumi, leading the defenses, charged out of the castle and into the enemy forces. This counter was only successful for a short time before the castle eventually fell to the Takeda.
+        <br> <br> Kamiizumi’s swordsmanship revolved around “the life-giving sword” (<i>katsujin-ken</i>) and Hidetsuna himself shunned the idea of the “killing sword” (<i>setsunin-tō</i>). These two concepts did not refer to the sword itself, but how the wielder used it. Although he was known to be unrivaled in martial skill, he disliked the idea of killing his challengers and would lean towards pacifism if it was possible. Kamiizumi was most notable for his invention of the bagged bamboo swords (<i>fukuro-shinai</i>). He also established the <mark>Shinkage-ryū</mark> school.  
+        </p>
+    </div>
+  </div>
+  </div>
+
+
+  <div class="imageContainerR">
+    <img id = "image2" src="assets/images/kendo3.jpg" ALIGN = "right" style= "width:150px;height:200px"/>
+    <div class = "dropdown-content">
+      <p>Image references here</p>
+    </div>
+  </div>   
+  <div class="container left">
+    <div class="content">
+      <h2>Itō Ittōsai</h2>
+      <br>
+      <div class = "arrowContainer">
+        <div onclick = "contentDropWHL(2,250,350,50)" class="arrow"></div>
+      </div>
+          <br>
+          <div class="expanded-content fade">
+      <p>Itō Ittōsai (1560–1653), a descendant of the <mark2>Kamakura</mark2> family, was a swordsman from Izu Ōshima. When he was fourteen years old, Ittōsai fought and won against a kendo master named Tomita Ippō. After this victory, he was awarded a sword forged by swordsmith Ichimonji of Bizen province. During his stay at a priest’s house, Ittōsai was ambushed by Tomita’s students. Ittōsai defeated all of the attackers, killing the last enemy by slicing through both the attacker and the pot he was hiding behind. Therefore, his sword was named “Ichimonji’s pot-splitting sword” (<i>Kamewari Ichimonji</i>). Ittōsai practiced <mark>musha shugyō</mark>, training under different masters from various parts of Japan. He went around the country with a banner reading, “The best in Japan, Supreme expert of kenjutsu, Itō Ittōsai” which he used as a way to attract good teachers.
+        <br> <br> Ittōsai is known for his establishment of the <mark>Ittō-ryū</mark> school. Ittōsai is also known for winning 33 duels in his life. Unlike other prominent swordsmen such as Yagyū Munenori and Miyamoto Musashi, Ittōsai never sought religious enlightenment, prestige, or employment. Instead, he strictly strove to improve his swordsmanship.
+        </p>
+    </div>
+  </div>
+  </div>
+
+  <div class="imageContainerL" style="left:35% ">
+    <img id = "image3" src="assets/images/kendo4.jpg" ALIGN = "right" style= "width:125px;height:250px"/>
+    <div class = "dropdown-content">
+      <p>Image references here</p>
+    </div>
+  </div>   
+  <div class="container right">
+    <div class="content">
+      <h2>Miyamoto Musashi</h2>
+      <h4>(1584–1645)</h4>
+      <br>
+      <p>Ut elementum metus sed nibh finibus scelerisque ac semper odio. Donec vitae maximus nisi, vitae egestas felis.</p>
+      <div class = "arrowContainer">
+        <div onclick = "contentDropWHL(3,200,400,30)" class="arrow"></div>
+      </div>
+          <br>
+          <div class="expanded-content fade">
+      <p> <br> <br> Miyamoto Musashi (1584–1645) was the most famous swordsman of the seventeenth century who systemized the use of two swords. He wrote <i>The Book of Five Rings</i> (<i>Gorin no Shō</i>) in which he explores the technical side of swordsmanship as well as the philosophy behind the man holding the sword. The Five Rings are categorized into chapters: Earth, Water, Fire, Wind, and Sky. Musashi criticized the <mark>fukuro-shinai</mark> invented by <mark2>Kamiizumi</mark2>, declaring that they were only for cowards. Musashi is thus known for using the stronger and heavier wooden swords (<i>bokken</i>). 
+        <br> <br> Musashi had his first duel at thirteen when a samurai posted a sign stating that he would challenge anyone in a duel. Musashi wrote that he would accept the samurai’s challenge and successfully crushed his skull with a wooden sword after throwing him to the ground. Miyamoto would go on to win sixty duels by the time he was 28. Another popular duel between Musashi and <mark2>Sasaki Kojirō</mark2> took place in 1612. Musashi arrived to the duel three hours late and brought a wooden sword that he carved out of an oar. The duel ended when Musashi barely dodged an attack from Kojirō and struck him on the head with his sword. A week before his death in 1645, Muashi wrote <i>The Way of Walking Alone</i> (<i>Dōkkodō</i>). This work consists of 21 precepts on self discipline.       
+        </p>
+    </div>
+  </div>
+  </div>
+
+  <div class="imageContainerR" >
+    <img id = "image4" src="assets/images/kendo5.jpg" ALIGN = "right" style= "width:200px;height:200px"/>
+    <div class = "dropdown-content">
+      <p>Image references here</p>
+    </div>
+  </div>   
+  <div class="container left">
+    <div class="content">
+      <h2>Yagyū Munenori</h2>
+      <br>
+      <h4>(1571-1646)</h4>
+      <div class = "arrowContainer">
+        <div onclick = "contentDropWHL(4,275,275,50)" class="arrow"></div>
+      </div>
+          <br>
+          <div class="expanded-content fade">
+      <p> Yagyū Munenori (1571–1646) is well known for his publication of <i>A Hereditary Book on the Art of War</i> (<i>Heihō kadensho</i>) in 1632. This text explores the religious and philosophical aspects of swordsmanship. For example, Munenori describes how one ought to keep their mind calm when the body is on the offensive. In one chapter, he claims that weapons of war are destructive and killing goes against the “way of heaven” (<i>tendō</i>). Munenori was also a student of a Zen priest known as Sōhō Takuan who influenced his writings. According to Munenori, the purpose of kendo training is to remove “sickness” in the mind. The ultimate goal is a neutral state of mind (<i>byōjōshin</i>). Munenori was also a teacher of the second and third Tokugawa shoguns. 
+        </p>
+    </div>
+  </div>
+  </div>
+
+  <div class="imageContainerL" style="left:32%" >
+    <img id = "image5" src="assets/images/kendo6.jpg" ALIGN = "right" style= "width:150;height:200px"/>
+    <div class = "dropdown-content">
+      <p>Image references here</p>
+    </div>
+  </div>   
+  <div class="container right">
+    <div class="content">
+      <h2>Chiba Shūsaku</h2>
+      <br>
+      <div class = "arrowContainer">
+        <div onclick = "contentDropWHL(5,225,300,29)" class="arrow"></div>
+      </div>
+          <br>
+          <div class="expanded-content fade">
+      <p>Chiba Shūsaku (1794–1856) developed the <i>Genbukan</i>, a school established in 1822 in Tokyo. This school became very successful due to Shūsaku’s ability to simplify the eight ranks of <mark>Ittō-ryū</mark> school into three. This led to a reduced fee that students were required to pay that also fueled the popularity of <i>Genbukan</i>. Shūsaku’s emphasis on training both the body and the mind heavily influenced the modernization of kendo during the <mark2>Meiji period</mark2>. According to Shūsaku, speed is victory. 
+        <br> <br> He also wrote the <i>Secret Methods of the Sword</i> (<i>Kenpō Hiketsu</i>). In this book, Shūsaku concludes that there are 68 techniques in kendo. Shūsaku also shows his superb ability to teach kendo in the <i>Ten Merits in Striking</i> (<i>kenjutsu uchikomi jūtoku</i>). In this list, Shūsaku highlights points that allow beginners to learn quickly, such as “swing the arms freely” and “move the whole body lightly and freely.” His different teaching methods, such as teaching <mark>uchikomi-keiko</mark> before <mark>kata</mark>, made his dojo become one of the three biggest in Edo.
+        </p>
+    </div>
+    </div>
+  </div>
+
+
+  <div class="imageContainerR">
+    <img id = "image6" src="assets/images/kendo7.jpg" ALIGN = "right" style= "width:150;height:200px"/>
+    <div class = "dropdown-content">
+      <p>Image references here</p>
+    </div>
+  </div>   
+  <div class="container left">
+    <div class="content">
+      <h2>Yamaoka Tesshū</h2>
+      <br>
+      <div class = "arrowContainer">
+        <div onclick = "contentDropWHL(6,200,275,50)" class="arrow"></div>
+      </div>
+          <br>
+          <div class="expanded-content fade">
+      <p> Yamaoka Tesshū (1836–1888), a student of Chiba Shūsaku, was a samurai who directly served the <mark2>Tokugawa shogunate</mark2> in Edo. After the fall of the shogunate, Tesshū served as an aide to Emperor Meiji (1867-1912), teaching the imperial guards his methods of swordsmanship. Tesshū is known to have systemized the <mark>Mutō-ryū</mark> (no-sword school). In his dojo, beginner students were viciously attacked without instructions. These students were to learn how to defend themselves by being hit in the body multiple times. Students who challenged themselves in this dojo were forced to train from morning to late afternoon. Those strong enough to survive these challenges found blood in their urine and feces. Some also could not differentiate dreams from reality due to severe exhaustion. Tesshū himself is known to have done 200 matches a day for a whole week during training.          
+        </p>
+    </div>
+    </div>
+  </div>
+
+  <div class="imageContainerL" style = "left:32%">
+    <img id = "image7" src="assets/images/kendo8.jpg" ALIGN = "right" style= "width:150;height:200px"/>
+    <div class = "dropdown-content">
+      <p>Image references here</p>
+    </div>
+  </div>   
+  <div class="container right">
+    <div class="content">
+      <h2>Sakakibara Kenkichi</h2>
+      <br>
+      <h4>(1830–1894)</h4>
+      <div class = "arrowContainer">
+        <div onclick = "contentDropWHL(7,225,300,29)" class="arrow"></div>
+      </div>
+          <br>
+          <div class="expanded-content fade">
+
+      <p>Sakakibara Kenkichi was a swordsman of the nineteenth century. He earned his certification in his twenties after being trained under <mark2>Odani Seiichirō</mark2> who was of the <mark>Jikishinkage-ryū</mark> school. Kenkichi grew up during the prohibition on wearing swords (1876) and the decline of the samurai class. As a poor swordsman who was loyal to the shogunate, he devoted his time to reviving the culture of swordsmanship while rejecting the new society brought by the <mark2>Meiji Restoration</mark2> (1868). 
+        Kenkichi’s contribution to kendo began when he established the <i>Gekken kaisha</i> in 1872. This company conducted public demonstrations of martial arts that allowed poor swordsmen to earn money. The success of these public demonstrations attracted other swordsmen who copied Kenkichi and built their own businesses. By September of that year, Tokyo had twenty companies that displayed a variety of martial arts.   
+        </p>
+    </div>
+  </div>
+  </div>
+</div>
+      
+      
+    </div>
+        
+    
+    <!--muller html for uploading images-->
+    <!--form method="POST" action="/upload" enctype="multipart/form-data">
+        <input type = "file" name = "image">
+        <input type = "Submit">
+    <form-->
+    -->
+</body>
+</html>

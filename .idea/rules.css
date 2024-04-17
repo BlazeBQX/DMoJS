@@ -46,10 +46,10 @@ background-size: cover;
 }
 
 #myBtn{
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 200px);
   width: 300px;
   height: 250px;
   font-size: 50px;
@@ -74,10 +74,10 @@ background-size: cover;
 }
 
 #myBtn2{
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
-  transform: translate(-200%, -50%);
+  transform: translate(-300%, 200px);
   width: 300px;
   height: 250px;
   font-size: 50px;
@@ -102,10 +102,10 @@ background-size: cover;
 }
 
 #myBtn3{
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
-  transform: translate(100%, -50%);
+  transform: translate(-100%, 175px);
   width: 300px;
   height: 250px;
   font-size: 50px;
