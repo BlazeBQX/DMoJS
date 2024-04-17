@@ -267,6 +267,46 @@ li a:hover {
 
     /* collections code end */
 
+    .rowa {
+      display: flex;
+      align-content: center;
+      justify-content: center;
+    }
+    
+    .columna {
+      z-index:997;
+      flex: 33.33%;
+      padding-top: 15px;
+      padding-bottom:15px;
+      margin-left: 11px;
+      margin-right: 11px;
+      /* text-align:center; */
+      position:relative;
+    }
+  
+    .columna .image-overlay p{
+      font-size:40px;
+      opacity:0%;
+      color: white;
+      position:absolute;
+      justify-content:space-evenly;
+      align-items:center;
+      width:100%;
+      text-align:center;
+      top:180px;
+      left: -7px;
+    }
+  
+    .columna:hover .image-overlay p{
+      opacity:100%;
+      transition: opacity 0.3s ease-in-out; 
+      margin-left: 135px;
+      max-width:520px;
+      background:rgba(211,53,98,0.83);
+    }
+
+    /* audio code end */
+
     .subsec{
       background:black;
     }
