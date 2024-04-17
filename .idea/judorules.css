@@ -49,10 +49,10 @@ background-size: cover;
 
 
 #myBtn  {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 75%;
-  transform: translate(-200%, -50%);
+  transform: translate(-200%, 50%);
   width: 500px;
   height: 350px;
   font-size: 50px;
@@ -77,10 +77,10 @@ background-size: cover;
 }
 
 #myBtn2{
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
-  transform: translate(25%, -50%);
+  transform: translate(-75%, 60%);
   width: 500px;
   height: 350px;
   font-size: 50px;
