@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "home.css">
+    <style>
+        /* text
+        bg
+        end padding */
+    .text-header{
+      text-align: center;
+    }
+
+    .text-header h1{
+      color:white;
+      font-family: 'Poppins';
+      text-decoration:underline;
+      padding-top: 20px;
+      font-size:40px;
+      padding-bottom:20px;
+    }
+
+    .text-header h2{
+      color:black;
+      font-family: 'Poppins';
+      padding-top: 20px;
+      font-size:40px;
+      padding-bottom:40px;
+    }
+
+    .text-header p{
+      color:white;
+      text-align:center;
+      padding-bottom: 50px;
+    }
+
+    .mid .text-header{
+      align-items:center;
+      text-align:center;
+    }
+
+    /* .active p{
+      color:#2c8bab;
+      text-decoration: underline;
+    }
+
+    .active:hover p{
+      cursor:pointer;
+      opacity:60%;
+    } 
+    .inactive{
+      display:flex;
+      text-align:center;
+      justify-content:center;
+      align-items:center;
+      color:black;
+    }
+
+    .inactive p:hover{
+      cursor:pointer;
+      color:#2c8bab;
+      text-decoration: underline;
+  } */
+
+  .end p{
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 17px;
+    justify-content:center;
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    margin-bottom: 5px;
+    padding: 5px;
+  }
+
+  .end{
+    background: #33101C;
+    display:flex;
+    margin-top:30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align:center;
+    justify-content:center;
+    align-items:center;
+  }
+    </style>
+</head>
+
+<body>
+
+<!-- header code start here -->
+    <div class="header" >
+        <div class="menu-icon"  onclick="toggleMenu(this)" style="float:left;">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <h1 style = "position: absolute;transform: translate(730px, -40px);
+        color:aliceblue;font-family: 'Lucida Sans', 'Lucida Sans Regular',
+         'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+         About Us</h1>
+
+         <div id="myDropdown" style = "padding-bottom: 0px;" class="menu-dropdown" >
+          <ul style = "font-size: large;">
+            <li><a href="http://127.0.0.1:5500/.idea/sumoselection.html">Sumo</a></li>
+            <li><a href="http://127.0.0.1:5500/.idea/judoselection.html">Judo</a></li>
+            <li><a href="http://127.0.0.1:5500/.idea/kendoselection.html">Kendo</a></li>
+            <li><a href="http://127.0.0.1:5500/.idea/yakyu.html">Yakyū</a></li>
+            <li><a href="http://127.0.0.1:5500/.idea/sportsday.html">Sports Day</a></li>
+            <li><a href="http://127.0.0.1:5500/.idea/intlsports.html">International Sports</a></li>
+         </ul></div>
+     </div>
+     <div class="logo">
+      <a href="http://127.0.0.1:5500/.idea/homepage.html"> 
+        <img src = "assets/images/logoicon.png"
+          width="40" 
+          height="40">
+     </div></a>
+</div>
+<!-- header code ends here-->
+
+  <!-- bg image, text on top? -->
+<!-- text: The only museum in the world dedicated to Japanese sports. -->
+<!-- 1. mission Statement -->
+<div class="subsec" >
+  <div class="text-header">
+    <h1><b> Mission Statement </b></h1>
+    <p>We, the Digital Museum of Japanese Sports, curated this museum dedicated to Japanese sports based on the following philosophy: we cannot tell the story of Japanese sports without<br> 
+      them. We chose people who greatly influenced Japanese sports, including sports native to Japan and sports not native to Japan where Japanese people have made historic strides. Not<br> 
+      only are great athletes included, but the philosophers and organizers who significantly altered the institution of Japanese sports, and the events that show how Japanese culture<br>
+      specifically has impacted these sports. We created main sections on sumo because of its history as the oldest native Japanese sport, kendo because of its rich military history in Japan<br>
+      with the sword being a national symbol, judo because it was the first native Japanese sport popularly practiced worldwide, and baseball because it is the most popular sport in Japan by<br>
+      far. We have also created a section highlighting notable Japanese athletes in non-native sports like figure skating and basketball. We are proud to be the first and only museum in the<br>
+      world - digital or physical - dedicated to Japanese sports.</p>
+    </div> 
+<!-- 2. people and positions -->
+  <div class="mid" style="background-color:#DFF0F6">
+    <div class="text-header">
+        <h2><b> Our Team </b></h2> <!-- not centered, fix !-->
+    </div> 
+    <div class="rowa">
+      <div class="columna" ALIGN="center">
+        <img src = "assets\images/testimage1.jpg" width="150" height="150">
+      </a></div>
+      <div class="columna">
+        <h1>First Last</h1>
+        <p>position</p>
+      </a></div>
+      <div class="columna" ALIGN="center">
+        <img src = "assets\images/testimage1.jpg" width="150" height="150">
+      </a></div>
+      <div class="columna">
+        <h1>First Last</h1>
+        <p>position</p>
+      </a></div>
+      <div class="columna" ALIGN="center">
+        <img src = "assets\images/testimage1.jpg" width="150" height="150">
+      </a></div>
+      <div class="columna">
+        <h1>First Last</h1>
+        <p>position</p>
+      </a></div>
+    </div><div class="rowa">
+      <div class="columna" ALIGN="center">
+        <img src = "assets\images/testimage1.jpg" width="150" height="150">
+      </a></div>
+      <div class="columna">
+        <h1>First Last</h1>
+        <p>position</p>
+      </a></div>
+      <div class="columna" ALIGN="center">
+        <img src = "assets\images/testimage1.jpg" width="150" height="150">
+      </a></div>
+      <div class="columna">
+        <h1>First Last</h1>
+        <p>position</p>
+      </a></div>
+      <div class="columna" ALIGN="center">
+        <img src = "assets\images/testimage1.jpg" width="150" height="150">
+      </a></div>
+      <div class="columna">
+        <h1>First Last</h1>
+        <p>position</p>
+      </a></div>
+      </div>
+  </div>
+
+
+  <!-- final section below -->
+  <div class="end" ALIGN = "center" style="background-color:#A0DFF2">
+    <div><p>About Us</p></div>
+    <div><p>Glossary</p></div>
+    <div><p>Sources</p></div>
+</div>
+
+</body>
+</html>
