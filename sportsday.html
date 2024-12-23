@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "sportsday.css">
+    <title>Homepage</title>
+
+    <style>
+      .header{
+        background-color:#007476;
+      }
+      .content {
+        background-color: #6f7cbe;
+      }
+      .mid{
+        background: linear-gradient(#1E2451, #B4BFF9);
+      }
+      .left::before{
+        border-color: transparent transparent transparent #6f7cbe;
+      }
+      .right::before{
+        border-color: transparent #6f7cbe transparent transparent;
+      }
+      .container::after{
+        border: 4px solid #1E2451;
+      }
+      .timeline::after{
+        background-color: #1E2451;
+      }
+      .textCard{
+        background: #DBE0FB;
+      }
+      .arrowContainer{
+        background-color:#6f7cbe;
+      }
+    </style>
+
+</head>
+<body>
+    <script src = "starter.js"></script>
+
+    
+    <!-- header code begins here-->
+<div class="header">
+  <div class="menu-icon"  onclick="toggleMenu(this)" style="float:left;">
+     <div class="bar1"></div>
+     <div class="bar2"></div>
+     <div class="bar3"></div>
+
+         <div id="myDropdown" class="menu-dropdown">
+          <ul style = "font-size: large;">
+                      <li><a href="http://127.0.0.1:5500/.idea/sumoselection.html">Sumo</a></li>
+            <li><a href="http://127.0.0.1:5500/.idea/judoselection.html">Judo</a></li>
+            <li><a href="http://127.0.0.1:5500/.idea/kendoselection.html">Kendo</a></li>
+            <li><a href="http://127.0.0.1:5500/.idea/yakyu.html">Yakyū</a></li>
+            <li><a href="http://127.0.0.1:5500/.idea/sportsday.html">Sports Day</a></li>
+            <li><a href="http://127.0.0.1:5500/.idea/intlsports.html">International Sports</a></li>
+         </ul></div>
+     </div>
+     <div class="logo">
+      <a href="http://127.0.0.1:5500/.idea/homepage.html"> 
+        <img src = "assets/images/logoicon.png"
+          width="40" 
+          height="40">
+     </div></a>
+</div>
+<!-- header code ends here-->
+<body background="assets/images/sportsday2.jpg">
+  <button id="myBtn">Sports Day</button>
+
+  <div id="myModal" class = "modal">
+
+    <div class = "modal-content">
+      <span class="close">&times;</span>
+
+      <div class="mySlides">
+        <div class="modal-header">
+          <h2>National Sports Day</h2>
+        </div>
+        <div class ="slide-content">
+          <img src="assets/images/sportsday2.jpg" style="padding-left: 10px;position: fixed;left:55%;width:500px">
+          <div class="text" style="width:50%;margin-left: 30px; margin-bottom: 20px;">
+            National Sports Day (<i>taiiku no hi</i>), later renamed to Sports Day (<i>supōtsu no hi</i>), is held on the second Monday of October to promote an active and healthy lifestyle. The holiday was established as a way to celebrate the opening of the 1964 Summer Olympics that was held in Tokyo. The first National Sports Day was held on October 10, 1966, two years after the Summer Olympics. In 2000, the holiday was moved to the second Monday in October. This was due to the Happy Monday System that modified to the Japanese law in both 1998 and 2001. This system set aside laws to move national holidays to Mondays, allowing for three-day weekends.
+          </div>
+        </div>
+      </div>
+      
+      <div class ="mySlides">
+        <div class="modal-header">
+          <h2>The First Undōkai</h2>
+        </div>
+        <div class="slide-content">
+          <div class="text" style="width:95%;margin-left: 30px; margin-bottom: 30px;">
+            The first sports festival (<i>undōkai</i>) was held in 1874 at the Imperial Naval Academy located in Tokyo. These sports festivals then spread throughout the nation and became a required extracurricular activity. The activities in these sports festivals included races, ball games, military gymnastics, and martial arts. According to the Japan Educational Association Journal, 32 separate sports festivals were held between 1884 and 1892.
+          </div>
+        </div>
+        
+      </div>
+
+      <div class ="mySlides">
+        <div class="modal-header">
+          <h2>Patriotism</h2>
+        </div>
+        <div class="slide-content">
+          <div class="text" style="width:95%;margin-left: 30px; margin-bottom: 30px;">
+            During World War I, Japan focused their endeavors in increasing patriotism and military preparedness. In 1924, the Ministry of Education declared the National Physical Education Day, ordering schools to take the day to promote collective behavior, moral training, and national spirit. The next year, there was a ordinance called the Order of Attachment of Military Officers to Schools. Military drills became a component of the curriculum from middle school and above. 
+          </div>
+        </div>
+        
+      </div>
+
+      <div class ="mySlides">
+        <div class="modal-header">
+          <h2>1964 Tokyo Summer Olympics</h2>
+        </div>
+        <div class="slide-content">
+          <img src="assets/images/olympics.jpg" style="padding-left: 10px;position: fixed;left:55%">
+          <div class="text" style="width:50%;margin-left: 30px; margin-bottom: 30px;">
+            The 1964 Tokyo Summer Olympics was the one of the final factors that contributed to the creation of Japan’s National Sports Day. This event was a symbol that represented Japan as a new, peaceful country that successfully rebuilt itself after a devastating blow brought by World War II. Another significant aspect of the event was that it was the first time the Olympics were held in a non-Western city. It was also the first Olympics to be globally broadcasted live in color. Although Tokyo had won the vote to host the event, many had mixed feelings since the city and Japan’s economy had just been severely damaged by fire bombings. Regardless, Japan emerged as a technological leader, developing projects that allowed for large numbers of tourists to visit. 
+            <br><br>
+            The most famous project that was completed parallel to preparing for the event was the bullet train (<i>shinkansen</i>). Although the project began in the 1930s, the war had hindered its development. The Olympics revived the project and the fastest train in the world was created before the start of the event.  
+ 
+          </div>
+        </div>
+        
+      </div>
+
+      <div class ="mySlides">
+        <div class="modal-header">
+          <h2>National Sports Day Activities Today</h2>
+        </div>
+        <div class="slide-content">
+          <img src="assets/images/sportsdayact.jpg" style="padding-left: 10px;position: fixed;left:55%; width: 500px">
+          <div class="text" style="width:80%;margin-left: 30px; margin-bottom: 30px;">
+            <ul2>
+              <li>Radio Taisō (radio calisthenics)</li>
+              <br>
+              <li>Tamaire (ball toss)</li>
+              <br>
+              <li>Kibasen (cavalry battle)</li>
+              <br>
+              <li>Relay race</li>
+              <br>
+              <li>Three-legged race</li>
+              <br>
+              <li>Sack race</li>
+              <br>
+              <li>Tug-of-war</li>
+            </ul2>  
+ 
+          </div>
+        </div>
+        
+      </div>
+
+      
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+  </div>
+
+
+
+
+<script src="sportsday.js"></script>
+</body>
+
+    
+    <!--muller html for uploading images-->
+    <!--form method="POST" action="/upload" enctype="multipart/form-data">
+        <input type = "file" name = "image">
+        <input type = "Submit">
+    <form-->
+
+
+</html>

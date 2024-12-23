@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "judorules.css">
+    <title>Homepage</title>
+
+    <style>
+      .header{
+        background-color:#1E2451;
+      }
+      .content {
+        background-color: #6f7cbe;
+      }
+      .mid{
+        background: linear-gradient(#1E2451, #B4BFF9);
+      }
+      .left::before{
+        border-color: transparent transparent transparent #6f7cbe;
+      }
+      .right::before{
+        border-color: transparent #6f7cbe transparent transparent;
+      }
+      .container::after{
+        border: 4px solid #1E2451;
+      }
+      .timeline::after{
+        background-color: #1E2451;
+      }
+      .textCard{
+        background: #DBE0FB;
+      }
+      .arrowContainer{
+        background-color:#6f7cbe;
+      }
+    </style>
+
+</head>
+<body>
+    <script src = "starter.js"></script>
+
+    
+    <!-- header code begins here-->
+<div class="header">
+  <div class="menu-icon"  onclick="toggleMenu(this)" style="float:left;">
+     <div class="bar1"></div>
+     <div class="bar2"></div>
+     <div class="bar3"></div>
+
+         <div id="myDropdown" class="menu-dropdown">
+          <ul style = "font-size: large;">
+            <li><a href="http://127.0.0.1:5500/.idea/sumoselection.html">Sumo</a></li>
+            <li><a href="http://127.0.0.1:5500/.idea/judoselection.html">Judo</a></li>
+            <li><a href="http://127.0.0.1:5500/.idea/kendoselection.html">Kendo</a></li>
+            <li><a href="http://127.0.0.1:5500/.idea/yakyu.html">Yakyū</a></li>
+            <li><a href="http://127.0.0.1:5500/.idea/sportsday.html">Sports Day</a></li>
+            <li><a href="http://127.0.0.1:5500/.idea/intlsports.html">International Sports</a></li>
+         </ul></div>
+     </div>
+     <div class="logo">
+      <a href="http://127.0.0.1:5500/.idea/homepage.html"> 
+        <img src = "assets/images/logoicon.png"
+          width="40" 
+          height="40">
+     </div></a>
+</div>
+<!-- header code ends here-->
+<body background="assets/images/judoMainPage1.jpg">
+  <button id="myBtn">Judo Olympic Rules and Regulations</button>
+
+  <div id="myModal" class = "modal">
+
+    <div class = "modal-content">
+      <span class="close">&times;</span>
+
+      <div class="mySlides">
+        <div class="modal-header">
+          <h2>Rules and Regulations</h2>
+        </div>
+        <div class ="slide-content">
+          
+          <div class="text" style="width:95%;margin-left: 30px; margin-bottom: 20px;">
+            <ul style="list-style-type: disc;">
+              <li>Judo is the only native Japanese sport that is consistently included in the Olympics. It has appeared in every Olympics since 1964, excluding 1968.</li>
+              <li>The only form of equipment used in judo is a judogi, which is a heavy cotton uniform with a jacket and trousers.
+                <ul style="list-style-type: circle;margin-left: 30px;">
+                  <li>In a match one competitor wears white and the other wears blue. The competitor on the top line of the bracket always wears white.</li>
+                  <li>Women are also allowed to wear a white shirt underneath the jacket, but men are not.</li>
+                </ul>
+              </li>
+                
+              
+              <li>Matches are separated into seven weight classes for both the men and women’s events. There is a different system in the recently added mixed-team events. In the mixed-team events, three men and three women compete in individual matches and score points for their team rather than themselves.
+                <ul style="list-style-type: circle;margin-left: 30px;margin-bottom: 20px;">
+                <li>men’s weight classes: -60kg, -66kg, -73kg, -81kg, -90kg, -100kg, +100kg</li>
+                <li>women’s weight classes: -48kg, -52kg, -57kg, -63kg, -70kg, -78kg, +78kg</li>
+                <li>mixed-team weight classes: -57kg women, -70kg women, +70kg women, -73kg men, -90kg men, +90kg men</li>
+                </ul>
+              </li>
+              <li>Men’s matches are five minutes long, and women’s matches are four minutes long. If the match is tied at the end of regulation, there is a sudden-death overtime where the first point, known as the “golden point,” wins.</li>
+              <li>There are two types of penalties in judo: <mark>hansoku-make</mark>, and <mark>shido</mark>.
+                <ul style="list-style-type: circle;margin-left: 30px;margin-bottom: 20px;">
+                  <li><mark>Hansoku-make</mark> are serious infringements such as intentionally trying to injure an opponent. These penalties result in immediate disqualification.</li>
+                  <li><mark>Shido</mark> are minor infringements such as intentionally stepping out of bounds or being too passive. If a competitor receives four in a match, they are disqualified.</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class ="mySlides">
+        <div class="modal-header">
+          <h2>Rules and Regulations (cont.)</h2>
+        </div>
+        <div class="slide-content">
+          <div class="text" style="width:95%;margin-left: 30px; margin-bottom: 30px;">
+            <ul style="list-style-type: disc;">
+              <li>There are three ways to score in judo: ippon, waza-ari, and yuko. An ippon is worth 100 points, a waza-ari is worth 10 and a yuko is worth 1.</li>
+              <li>Scoring an ippon immediately ends the match. There are four ways to score an ippon:
+                <ol style="margin-left: 30px;margin-bottom: 20px;padding:20px">
+                  <li>Performing a “perfect throw” by throwing your opponent onto their back with force, speed, and control.</li>
+                  <li>Immobilizing an opponent for 20 seconds with a grappling technique while your opponent does not control a part of your body.</li>
+                  <li>Choking your opponent until they tap out or pass out.</li>
+                  <li>Locking your opponent's arm until they give up or their elbow is dislocated.</li>
+                </ol>
+              </li>
+              <li>Another way to win before the end of regulation is by scoring two waza-ari. A waza-ari is earned by completing a throw that is not quite an ippon because it lacks one of the three elements explained above. Waza-ari are also earned by immobilizing an opponent for 15–20 seconds.</li>
+              <li>Yuko can be scored in a similar fashion, but they are throws that lack two elements of an ippon, or holds that are between 10–15 seconds.</li>
+              <li>Two waza-ari equal one ippon, but no amount of yuko can equal a waza-ari.</li>
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+
+      
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+  </div>
+
+
+  <button id="myBtn2">Kōdōkan Kyū-Dan Ranking System</button>
+
+  <div id="myModal2" class = "modal">
+
+    <div class = "modal-content">
+      <span class="close">&times;</span>
+
+      <div class="mySlides2">
+        <div class="modal-header">
+          <h2>Rankings</h2>
+        </div>
+        <div class ="slide-content">
+          <div class="text" style="width: 100%;">
+            <ul style="list-style-type: disc;margin-left: 30px;">
+              <li>Rankings are split into kyū and dan. Kyū are lower grade, and dan are higher.</li>
+              <br>
+              <li>Kyū grades start at six and descend to one, while dan grades increase, starting at one and ending at ten.</li>
+              <br>
+              <li>These ranks are delineated by colored belts.
+                <ul style="list-style-type: circle;margin-left: 30px;">
+                  <li>Sixth kyū = Light Blue</li>
+                  <li>Fifth-fourth kyū = White</li>
+                  <li>Third-first kyū = Brown (Purple for juniors)</li>
+                  <li>First-fifth dan = Black</li>
+                  <li>Sixth-ninth dan = Red and White or Black</li>
+                  <li>Tenth dan = Red or Black</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<script src="judorules.js"></script>
+</body>
+
+    
+    <!--muller html for uploading images-->
+    <!--form method="POST" action="/upload" enctype="multipart/form-data">
+        <input type = "file" name = "image">
+        <input type = "Submit">
+    <form-->
+
+
+</html>

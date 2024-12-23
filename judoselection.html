@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "selection.css">
+    <title>Homepage</title>
+
+    <style>
+      .header{
+        background-color:#1E2451;
+      }
+      .content {
+        background-color: #6f7cbe;
+      }
+      .mid{
+        background: linear-gradient(#1E2451, #B4BFF9);
+      }
+      .left::before{
+        border-color: transparent transparent transparent #6f7cbe;
+      }
+      .right::before{
+        border-color: transparent #6f7cbe transparent transparent;
+      }
+      .container::after{
+        border: 4px solid #1E2451;
+      }
+      .timeline::after{
+        background-color: #1E2451;
+      }
+      .textCard{
+        background: #DBE0FB;
+      }
+      .arrowContainer{
+        background-color:#6f7cbe;
+      }
+
+      body {
+        background-color: #B4BFF9;
+      }
+
+      .column{
+        background:#DBE0FB;
+      }
+
+      .column:hover{
+        background:#6f7cbe;
+      }
+
+
+    </style>
+
+</head>
+
+
+
+
+
+<body>
+
+  
+
+   <!-- <div class = "card">
+        <a href="http://127.0.0.1:5500/DMoJS/.idea/homepage.html">
+            <img src = "assets/images/logoicon.png">
+        </a>
+    </div>-->
+    
+<!-- header code begins here-->
+<div class="header">
+  <div class="menu-icon"  onclick="toggleMenu(this)" style="float:left;">
+     <div class="bar1"></div>
+     <div class="bar2"></div>
+     <div class="bar3"></div>
+
+         <div id="myDropdown" class="menu-dropdown">
+          <ul style = "font-size: large;">
+            <li><a href="http://127.0.0.1:5500/.idea/sumoselection.html">Sumo</a></li>
+            <li><a href="http://127.0.0.1:5500/.idea/judoselection.html">Judo</a></li>
+            <li><a href="http://127.0.0.1:5500/.idea/kendoselection.html">Kendo</a></li>
+            <li><a href="http://127.0.0.1:5500/.idea/yakyu.html">Yakyū</a></li>
+            <li><a href="http://127.0.0.1:5500/.idea/sportsday.html">Sports Day</a></li>
+            <li><a href="http://127.0.0.1:5500/.idea/intlsports.html">International Sports</a></li>
+         </ul></div>
+     </div>
+     <div class="logo">
+      <a href="http://127.0.0.1:5500/.idea/homepage.html"> 
+        <img src = "assets/images/logoicon.png"
+          width="40" 
+          height="40">
+     </div></a>
+</div>
+<!-- header code ends here-->
+<div class="boxes" ALIGN="center">
+  <div class="column" width="500" height="400">
+  <a href="http://127.0.0.1:5500/.idea/judo.html">
+    <img src = "assets\images/judoicon.png" width="500" height="400" style="float:left;">
+    <div class="image-overlay1" ALIGN="center"> 
+      <p> HISTORY </p> 
+    </div> 
+  </a></div>
+  <div class="column" width="500" height="400">
+  <a href="http://127.0.0.1:5500/.idea/judorules.html">
+    <img src = "assets\images/rulesicon.png" width="500" height="400" style="float:right;">
+    <div class="image-overlay2" ALIGN="center"> 
+      <p> RULES & EQUIPMENT </p> 
+    </div> 
+  </a></div>
+</div>
+
+    
+    
+    
+      <script src = "homepage.js"></script>
+
+      
+
+
+
+<!--muller html for uploading images-->
+<!--form method="POST" action="/upload" enctype="multipart/form-data">
+    <input type = "file" name = "image">
+    <input type = "Submit">
+<form-->
+
+</body>
+</html>
