@@ -1,11 +1,35 @@
+
+const playing = urlParams.get('playing');
 function toggleMenu(x) {
     x.classList.toggle("change");
     
     document.getElementById('myDropdown').style.display = document.getElementById('myDropdown').style.display =='block' ?   'none' : 'block';
   }
 
-  
+function initAudio()
+{
+  if(playing!=null)
+  {
+    var source= document.getElementById("audioSource");
+    if(playing ==1){
+      source.src = "assets\audio/audiolog1MeijitoWW2.mp3";
+    }
+    if(playing ==2){
+      source.src = "assets\audio/bell.wav";
+    }
+    if(playing ==3){
+      source.src = "assets\audio/audiolog1MeijitoWW2.mp3";
+    }
+    if(playing ==4){
+      source.src = "assets\audio/audiolog1MeijitoWW2.mp3";
+    }
+      
 
+    var player =document.getElementById("cs_audio");
+
+    player.play();
+  }
+}
 
 function toggleAudioPlayer(){
     document.getElementById("audioPlayer").style.autoplay = document.getElementById("audioPlayer").style.autoplay =='true' ?   'false' : 'true';
