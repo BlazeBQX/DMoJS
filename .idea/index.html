@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "home.css">
+    <title>Homepage</title>
+
+    <style>
+        .text-header{
+    text-align: center;
+  }
+
+  .text-header h1{
+    color:white;
+    font-family: 'Poppins';
+    text-decoration:underline;
+    padding-top: 20px;
+    font-size:40px;
+    padding-bottom:20px;
+  }
+
+  .text-header p{
+    color:white;
+    text-align:center;
+    padding-bottom: 50px;
+  }
+
+  .end{
+    background: #33101C;
+    display:flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align:center;
+    justify-content:center;
+    align-items:center;
+  }
+
+  .end p:hover{
+    cursor:pointer;
+    color:#D33562;
+    text-decoration: underline;
+  }
+  .end p{
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 17px;
+    justify-content:center;
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    margin-bottom: 5px;
+    padding: 5px;
+    color:white;
+  }
+    </style>
+</head>
+
+
+
+
+
+
+<body>
+
+  
+
+   <!-- <div class = "card">
+        <a href="DMoJS/homepage.html">
+            <img src = "assets/images/logoicon.png">
+        </a>
+    </div>-->
+    
+<!-- header code begins here-->
+<div class="header" >
+  <div class="menu-icon"  onclick="toggleMenu(this)" style="float:left;">
+     <div class="bar1"></div>
+     <div class="bar2"></div>
+     <div class="bar3"></div>
+     <h1 style = "position: absolute;transform: translate(550px, -40px);color:aliceblue;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">The Digital Museum of Japanese Sports</h1>
+
+         <div id="myDropdown" style = "padding-bottom: 0px;" class="menu-dropdown" >
+          <ul style = "font-size: large;">
+            <li><a href="sumoselection.html">Sumo</a></li>
+            <li><a href="judoselection.html">Judo</a></li>
+            <li><a href="kendoselection.html">Kendo</a></li>
+            <li><a href="yakyu.html">Yakyū</a></li>
+            <li><a href="sportsday.html">Sports Day</a></li>
+            <li><a href="intlsports.html">International Sports</a></li>
+         </ul></div>
+     </div>
+     <div class="logo">
+      <a href="homepage.html"> 
+        <img src = "assets/images/logoicon.png"
+          width="40" 
+          height="40">
+     </div></a>
+</div>
+<!-- header code ends here-->
+    
+    
+    <div class="slideshow-container">
+      <div>
+        <div class="titlecard">
+         
+        </div>
+      </div> 
+
+        <div class="mySlides fade">
+          <img src="assets/images/judoMainPage1.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides fade">
+          <img src="assets/images/SumoMainPage1.jpg"style="width:100%">
+        </div>
+      
+        <div class="mySlides fade" style = "left:50px">
+          <img src="assets/images/baseballMainPage1.jpg"style="width:100%;">
+
+        </div>
+
+        <div class="mySlides fade">
+          <img src="assets/images/kendo1.jpg"style="width:100%">
+        </div>
+        
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="minusSlides()">&#10094;</a>
+        <a class="next" onclick="plusSlides()">&#10095;</a>
+      </div>
+      <br>
+      
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
+      <script src = "homepage.js"></script>
+
+      <!-- collections section start -->
+    <div class="mid">
+    <div class="text-header">
+        <h1><b> Collections </b></h1>
+    </div> 
+    <div class="row">
+      <div class="column">
+      <a href="sumoselection.html">
+        <img src = "assets\images/sumo1.jpg" width="500" height="400">
+        <div class="image-overlay"> 
+          <p>SUMO</p> 
+        </div> 
+      </a></div>
+      <div class="column">
+      <a href="judoselection.html">
+        <img src = "assets\images/judo1.jpg" width="500" height="400">
+        <div class="image-overlay"> 
+          <p>JUDO</p> 
+        </div> 
+      </a></div>
+      <div class="column">
+      <a href="kendoselection.html">
+        <img src = "assets\images/kendo2.jpg" width="500" height="400">
+        <div class="image-overlay"> 
+          <p>KENDO</p> 
+        </div> 
+      </a></div>
+    </div><div class="row">
+      <div class="column">
+      <a href="yakyu.html">
+        <img src = "assets\images/yakyu1.jpg" width="500" height="400">
+        <div class="image-overlay"> 
+          <p>YAKYŪ / BASEBALL</p>
+        </div> 
+      </a></div>
+      <div class="column">
+      <a href="sportsday.html">
+        <img src = "assets\images/sportsday1.jpg" width="500" height="400">
+        <div class="image-overlay"> 
+          <p>SPORTS<br>DAY</p> 
+        </div> 
+      </a></div>
+      <div class="column">
+      <a href="intlsports.html">
+        <img src = "assets\images/hachimura.jpg" width="500" height="400">
+        <div class="image-overlay"> 
+          <p>INTERNATIONAL<br>SPORTS</p> 
+        </div> 
+      </a></div>
+      </div>
+  </div>
+  <!-- collections section end, audio logs begin -->
+
+  <div class="mid">
+    <div class="text-header">
+        <h1><b> Audio Logs </b></h1>
+    </div> 
+    <div class="rowa">
+      <div class="columna" ALIGN="center">
+      <a href="sumoselection.html">
+        <img src = "assets\images/audioicon.png" width="500" height="400">
+        <div class="image-overlay"> 
+          <p>LOG 1</p> 
+        </div> 
+      </a></div>
+      <div class="columna" ALIGN="center">
+      <a href="judoselection.html">
+        <img src = "assets\images/audioicon.png" width="500" height="400">
+        <div class="image-overlay"> 
+          <p>LOG 2</p> 
+        </div> 
+      </a></div>
+    </div><div class="rowa">
+      <div class="columna" ALIGN="center">
+      <a href="yakyu.html">
+        <img src = "assets\images/audioicon.png" width="500" height="400">
+        <div class="image-overlay"> 
+          <p>LOG 3</p>
+        </div> 
+      </a></div>
+      <div class="columna" ALIGN="center">
+      <a href="starter.html">
+        <img src = "assets\images/audioicon.png" width="500" height="400">
+        <div class="image-overlay"> 
+          <p>LOG 4</p> 
+        </div> 
+      </a></div>
+      </div>
+  </div>
+
+  <!-- audio logs code end -->
+
+  <div class="subsec">
+  <div class="text-header">
+    <h1><b> Mission Statement </b></h1>
+    <p>We, the Digital Museum of Japanese Sports, curated this museum dedicated to Japanese sports based on the following philosophy: we cannot tell the story of Japanese sports without<br> 
+      them. We chose people who greatly influenced Japanese sports, including sports native to Japan and sports not native to Japan where Japanese people have made historic strides. Not<br> 
+      only are great athletes included, but the philosophers and organizers who significantly altered the institution of Japanese sports, and the events that show how Japanese culture<br>
+      specifically has impacted these sports. We created main sections on sumo because of its history as the oldest native Japanese sport, kendo because of its rich military history in Japan<br>
+      with the sword being a national symbol, judo because it was the first native Japanese sport popularly practiced worldwide, and baseball because it is the most popular sport in Japan by<br>
+      far. We have also created a section highlighting notable Japanese athletes in non-native sports like figure skating and basketball. We are proud to be the first and only museum in the<br>
+      world - digital or physical - dedicated to Japanese sports.</p>
+    </div> 
+
+  <!-- final section below -->
+  <div class="end" ALIGN = "center">
+      <div><a href="aboutus.html"><p>About Us</p></a></div>
+      <div><a href="homepage.html"><p>Glossary</p></a></div>
+      <div><a href="cites.html"><p>Sources</p></a></div>
+  </div></div>
+
+
+
+
+<!--muller html for uploading images-->
+<!--form method="POST" action="/upload" enctype="multipart/form-data">
+    <input type = "file" name = "image">
+    <input type = "Submit">
+<form-->
+
+</body>
+</html>
